@@ -1,0 +1,1978 @@
+2024-08-28 16:01:02,811 -  nornir.core -     INFO -        run() - Running task 'configure_basic_ip_addresses' with args {} on 4 hosts
+2024-08-28 16:01:02,812 - nornir.core.task -    ERROR -      start() - Host 'vIOS1': task 'configure_basic_ip_addresses' failed with traceback:
+Traceback (most recent call last):
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/imran/Documents/Automation/Nornir/Runbooks/Cisco_Lab2/Scrapli_Config_IP_Lab1.py", line 10, in configure_basic_ip_addresses
+    interfaces_list = task.host ['interfaces']
+                      ~~~~~~~~~~^^^^^^^^^^^^^^
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/nornir/core/inventory.py", line 350, in __getitem__
+    return self.data[item]
+           ~~~~~~~~~^^^^^^
+KeyError: 'interfaces'
+
+2024-08-28 16:01:02,813 - nornir.core.task -    ERROR -      start() - Host 'vIOS2': task 'configure_basic_ip_addresses' failed with traceback:
+Traceback (most recent call last):
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/imran/Documents/Automation/Nornir/Runbooks/Cisco_Lab2/Scrapli_Config_IP_Lab1.py", line 13, in configure_basic_ip_addresses
+    f"ip address {interface['ip']} {interface['mask']}",
+                  ~~~~~~~~~^^^^^^
+KeyError: 'ip'
+
+2024-08-28 16:01:02,814 - nornir.core.task -    ERROR -      start() - Host 'vIOS4': task 'configure_basic_ip_addresses' failed with traceback:
+Traceback (most recent call last):
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/imran/Documents/Automation/Nornir/Runbooks/Cisco_Lab2/Scrapli_Config_IP_Lab1.py", line 13, in configure_basic_ip_addresses
+    f"ip address {interface['ip']} {interface['mask']}",
+                  ~~~~~~~~~^^^^^^
+KeyError: 'ip'
+
+2024-08-28 16:01:02,815 - nornir.core.task -    ERROR -      start() - Host 'vIOS3': task 'configure_basic_ip_addresses' failed with traceback:
+Traceback (most recent call last):
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/imran/Documents/Automation/Nornir/Runbooks/Cisco_Lab2/Scrapli_Config_IP_Lab1.py", line 13, in configure_basic_ip_addresses
+    f"ip address {interface['ip']} {interface['mask']}",
+                  ~~~~~~~~~^^^^^^
+KeyError: 'ip'
+
+2024-08-28 16:13:52,455 -  nornir.core -     INFO -        run() - Running task 'configure_basic_ip_addresses' with args {} on 4 hosts
+2024-08-28 16:13:52,460 - nornir.core.task -    ERROR -      start() - Host 'vIOS3': task 'configure_basic_ip_addresses' failed with traceback:
+Traceback (most recent call last):
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/imran/Documents/Automation/Nornir/Runbooks/Cisco_Lab2/Scrapli_Config_IP_Lab1.py", line 13, in configure_basic_ip_addresses
+    f"ip address {interface['ip']} {interface['mask']}",
+                  ~~~~~~~~~^^^^^^
+KeyError: 'ip'
+
+2024-08-28 16:13:52,461 - nornir.core.task -    ERROR -      start() - Host 'vIOS2': task 'configure_basic_ip_addresses' failed with traceback:
+Traceback (most recent call last):
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/imran/Documents/Automation/Nornir/Runbooks/Cisco_Lab2/Scrapli_Config_IP_Lab1.py", line 13, in configure_basic_ip_addresses
+    f"ip address {interface['ip']} {interface['mask']}",
+                  ~~~~~~~~~^^^^^^
+KeyError: 'ip'
+
+2024-08-28 16:13:52,462 - nornir.core.task -    ERROR -      start() - Host 'vIOS4': task 'configure_basic_ip_addresses' failed with traceback:
+Traceback (most recent call last):
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/imran/Documents/Automation/Nornir/Runbooks/Cisco_Lab2/Scrapli_Config_IP_Lab1.py", line 13, in configure_basic_ip_addresses
+    f"ip address {interface['ip']} {interface['mask']}",
+                  ~~~~~~~~~^^^^^^
+KeyError: 'ip'
+
+2024-08-28 16:13:52,462 - nornir.core.task -    ERROR -      start() - Host 'vIOS1': task 'configure_basic_ip_addresses' failed with traceback:
+Traceback (most recent call last):
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/imran/Documents/Automation/Nornir/Runbooks/Cisco_Lab2/Scrapli_Config_IP_Lab1.py", line 13, in configure_basic_ip_addresses
+    f"ip address {interface['ip']} {interface['mask']}",
+                  ~~~~~~~~~^^^^^^
+KeyError: 'ip'
+
+2024-08-28 16:52:06,292 -  nornir.core -     INFO -        run() - Running task 'configure_basic_ip_addresses' with args {} on 4 hosts
+2024-08-28 16:53:39,416 -  nornir.core -     INFO -        run() - Running task 'configure_basic_ip_addresses' with args {} on 4 hosts
+2024-08-28 16:53:40,118 - nornir.core.task -    ERROR -      start() - Host 'vIOS3': task 'configure_basic_ip_addresses' failed with traceback:
+Traceback (most recent call last):
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/imran/Documents/Automation/Nornir/Runbooks/Cisco_Lab2/Scrapli_Config_IP_Lab1.py", line 12, in configure_basic_ip_addresses
+    task.run (task=send_configs, configs=[f"interface {interface}"
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: send_configs (failed)
+
+
+2024-08-28 16:53:40,132 - nornir.core.task -    ERROR -      start() - Host 'vIOS2': task 'configure_basic_ip_addresses' failed with traceback:
+Traceback (most recent call last):
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/imran/Documents/Automation/Nornir/Runbooks/Cisco_Lab2/Scrapli_Config_IP_Lab1.py", line 12, in configure_basic_ip_addresses
+    task.run (task=send_configs, configs=[f"interface {interface}"
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: send_configs (failed)
+
+
+2024-08-28 16:53:40,134 - nornir.core.task -    ERROR -      start() - Host 'vIOS4': task 'configure_basic_ip_addresses' failed with traceback:
+Traceback (most recent call last):
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/imran/Documents/Automation/Nornir/Runbooks/Cisco_Lab2/Scrapli_Config_IP_Lab1.py", line 12, in configure_basic_ip_addresses
+    task.run (task=send_configs, configs=[f"interface {interface}"
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: send_configs (failed)
+
+
+2024-08-28 16:53:40,140 - nornir.core.task -    ERROR -      start() - Host 'vIOS1': task 'configure_basic_ip_addresses' failed with traceback:
+Traceback (most recent call last):
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/imran/Documents/Automation/Nornir/Runbooks/Cisco_Lab2/Scrapli_Config_IP_Lab1.py", line 12, in configure_basic_ip_addresses
+    task.run (task=send_configs, configs=[f"interface {interface}"
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: send_configs (failed)
+
+
+2024-08-28 17:07:08,187 -  nornir.core -     INFO -        run() - Running task 'configure_basic_ip_addresses' with args {} on 4 hosts
+2024-08-28 17:13:10,376 -  nornir.core -     INFO -        run() - Running task 'configure_basic_ip_addresses' with args {} on 4 hosts
+2024-08-28 17:13:10,378 - nornir.core.task -    ERROR -      start() - Host 'vIOS1': task 'configure_basic_ip_addresses' failed with traceback:
+Traceback (most recent call last):
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/imran/Documents/Automation/Nornir/Runbooks/Cisco_Lab2/Scrapli_Config_IP_Lab1.py", line 14, in configure_basic_ip_addresses
+    f"ip address {task.host['int_name']['ip']} {task.host['int_name']['mask']}",
+                 ~~~~~~~~~^^^^^^^^^^^^
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/nornir/core/inventory.py", line 350, in __getitem__
+    return self.data[item]
+           ~~~~~~~~~^^^^^^
+KeyError: 'int_name'
+
+2024-08-28 17:13:10,379 - nornir.core.task -    ERROR -      start() - Host 'vIOS2': task 'configure_basic_ip_addresses' failed with traceback:
+Traceback (most recent call last):
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/imran/Documents/Automation/Nornir/Runbooks/Cisco_Lab2/Scrapli_Config_IP_Lab1.py", line 14, in configure_basic_ip_addresses
+    f"ip address {task.host['int_name']['ip']} {task.host['int_name']['mask']}",
+                 ~~~~~~~~~^^^^^^^^^^^^
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/nornir/core/inventory.py", line 350, in __getitem__
+    return self.data[item]
+           ~~~~~~~~~^^^^^^
+KeyError: 'int_name'
+
+2024-08-28 17:13:10,380 - nornir.core.task -    ERROR -      start() - Host 'vIOS4': task 'configure_basic_ip_addresses' failed with traceback:
+Traceback (most recent call last):
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/imran/Documents/Automation/Nornir/Runbooks/Cisco_Lab2/Scrapli_Config_IP_Lab1.py", line 14, in configure_basic_ip_addresses
+    f"ip address {task.host['int_name']['ip']} {task.host['int_name']['mask']}",
+                 ~~~~~~~~~^^^^^^^^^^^^
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/nornir/core/inventory.py", line 350, in __getitem__
+    return self.data[item]
+           ~~~~~~~~~^^^^^^
+KeyError: 'int_name'
+
+2024-08-28 17:13:10,380 - nornir.core.task -    ERROR -      start() - Host 'vIOS3': task 'configure_basic_ip_addresses' failed with traceback:
+Traceback (most recent call last):
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/imran/Documents/Automation/Nornir/Runbooks/Cisco_Lab2/Scrapli_Config_IP_Lab1.py", line 14, in configure_basic_ip_addresses
+    f"ip address {task.host['int_name']['ip']} {task.host['int_name']['mask']}",
+                 ~~~~~~~~~^^^^^^^^^^^^
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/nornir/core/inventory.py", line 350, in __getitem__
+    return self.data[item]
+           ~~~~~~~~~^^^^^^
+KeyError: 'int_name'
+
+2024-08-28 17:13:59,901 -  nornir.core -     INFO -        run() - Running task 'configure_basic_ip_addresses' with args {} on 4 hosts
+2024-08-28 17:13:59,902 - nornir.core.task -    ERROR -      start() - Host 'vIOS1': task 'configure_basic_ip_addresses' failed with traceback:
+Traceback (most recent call last):
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/imran/Documents/Automation/Nornir/Runbooks/Cisco_Lab2/Scrapli_Config_IP_Lab1.py", line 14, in configure_basic_ip_addresses
+    f"ip address {task.host[int_name]['ip']} {task.host[int_name]['mask']}",
+                 ~~~~~~~~~^^^^^^^^^^
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/nornir/core/inventory.py", line 350, in __getitem__
+    return self.data[item]
+           ~~~~~~~~~^^^^^^
+KeyError: 'lo0'
+
+2024-08-28 17:13:59,904 - nornir.core.task -    ERROR -      start() - Host 'vIOS3': task 'configure_basic_ip_addresses' failed with traceback:
+Traceback (most recent call last):
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/imran/Documents/Automation/Nornir/Runbooks/Cisco_Lab2/Scrapli_Config_IP_Lab1.py", line 14, in configure_basic_ip_addresses
+    f"ip address {task.host[int_name]['ip']} {task.host[int_name]['mask']}",
+                 ~~~~~~~~~^^^^^^^^^^
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/nornir/core/inventory.py", line 350, in __getitem__
+    return self.data[item]
+           ~~~~~~~~~^^^^^^
+KeyError: 'lo0'
+
+2024-08-28 17:13:59,904 - nornir.core.task -    ERROR -      start() - Host 'vIOS2': task 'configure_basic_ip_addresses' failed with traceback:
+Traceback (most recent call last):
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/imran/Documents/Automation/Nornir/Runbooks/Cisco_Lab2/Scrapli_Config_IP_Lab1.py", line 14, in configure_basic_ip_addresses
+    f"ip address {task.host[int_name]['ip']} {task.host[int_name]['mask']}",
+                 ~~~~~~~~~^^^^^^^^^^
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/nornir/core/inventory.py", line 350, in __getitem__
+    return self.data[item]
+           ~~~~~~~~~^^^^^^
+KeyError: 'lo0'
+
+2024-08-28 17:13:59,905 - nornir.core.task -    ERROR -      start() - Host 'vIOS4': task 'configure_basic_ip_addresses' failed with traceback:
+Traceback (most recent call last):
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/imran/Documents/Automation/Nornir/Runbooks/Cisco_Lab2/Scrapli_Config_IP_Lab1.py", line 14, in configure_basic_ip_addresses
+    f"ip address {task.host[int_name]['ip']} {task.host[int_name]['mask']}",
+                 ~~~~~~~~~^^^^^^^^^^
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/nornir/core/inventory.py", line 350, in __getitem__
+    return self.data[item]
+           ~~~~~~~~~^^^^^^
+KeyError: 'lo0'
+
+2024-08-28 17:21:24,209 -  nornir.core -     INFO -        run() - Running task 'configure_basic_ip_addresses' with args {} on 4 hosts
+2024-08-28 17:21:24,211 - nornir.core.task -    ERROR -      start() - Host 'vIOS1': task 'configure_basic_ip_addresses' failed with traceback:
+Traceback (most recent call last):
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/imran/Documents/Automation/Nornir/Runbooks/Cisco_Lab2/Scrapli_Config_IP_Lab1.py", line 14, in configure_basic_ip_addresses
+    f"ip address {task.host[int_name]['ip']} {task.host[int_name]['mask']}",
+                 ~~~~~~~~~^^^^^^^^^^
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/nornir/core/inventory.py", line 350, in __getitem__
+    return self.data[item]
+           ~~~~~~~~~^^^^^^
+KeyError: 'lo0'
+
+2024-08-28 17:21:24,213 - nornir.core.task -    ERROR -      start() - Host 'vIOS3': task 'configure_basic_ip_addresses' failed with traceback:
+Traceback (most recent call last):
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/imran/Documents/Automation/Nornir/Runbooks/Cisco_Lab2/Scrapli_Config_IP_Lab1.py", line 14, in configure_basic_ip_addresses
+    f"ip address {task.host[int_name]['ip']} {task.host[int_name]['mask']}",
+                 ~~~~~~~~~^^^^^^^^^^
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/nornir/core/inventory.py", line 350, in __getitem__
+    return self.data[item]
+           ~~~~~~~~~^^^^^^
+KeyError: 'lo0'
+
+2024-08-28 17:21:24,213 - nornir.core.task -    ERROR -      start() - Host 'vIOS4': task 'configure_basic_ip_addresses' failed with traceback:
+Traceback (most recent call last):
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/imran/Documents/Automation/Nornir/Runbooks/Cisco_Lab2/Scrapli_Config_IP_Lab1.py", line 14, in configure_basic_ip_addresses
+    f"ip address {task.host[int_name]['ip']} {task.host[int_name]['mask']}",
+                 ~~~~~~~~~^^^^^^^^^^
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/nornir/core/inventory.py", line 350, in __getitem__
+    return self.data[item]
+           ~~~~~~~~~^^^^^^
+KeyError: 'lo0'
+
+2024-08-28 17:21:24,214 - nornir.core.task -    ERROR -      start() - Host 'vIOS2': task 'configure_basic_ip_addresses' failed with traceback:
+Traceback (most recent call last):
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/imran/Documents/Automation/Nornir/Runbooks/Cisco_Lab2/Scrapli_Config_IP_Lab1.py", line 14, in configure_basic_ip_addresses
+    f"ip address {task.host[int_name]['ip']} {task.host[int_name]['mask']}",
+                 ~~~~~~~~~^^^^^^^^^^
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/nornir/core/inventory.py", line 350, in __getitem__
+    return self.data[item]
+           ~~~~~~~~~^^^^^^
+KeyError: 'lo0'
+
+2024-08-28 17:21:33,079 -  nornir.core -     INFO -        run() - Running task 'configure_basic_ip_addresses' with args {} on 4 hosts
+2024-08-28 17:21:33,082 - nornir.core.task -    ERROR -      start() - Host 'vIOS2': task 'configure_basic_ip_addresses' failed with traceback:
+Traceback (most recent call last):
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/imran/Documents/Automation/Nornir/Runbooks/Cisco_Lab2/Scrapli_Config_IP_Lab1.py", line 14, in configure_basic_ip_addresses
+    f"ip address {task.host[int_name]['ip']} {task.host[int_name]['mask']}",
+                 ~~~~~~~~~^^^^^^^^^^
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/nornir/core/inventory.py", line 350, in __getitem__
+    return self.data[item]
+           ~~~~~~~~~^^^^^^
+KeyError: 'lo0'
+
+2024-08-28 17:21:33,084 - nornir.core.task -    ERROR -      start() - Host 'vIOS3': task 'configure_basic_ip_addresses' failed with traceback:
+Traceback (most recent call last):
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/imran/Documents/Automation/Nornir/Runbooks/Cisco_Lab2/Scrapli_Config_IP_Lab1.py", line 14, in configure_basic_ip_addresses
+    f"ip address {task.host[int_name]['ip']} {task.host[int_name]['mask']}",
+                 ~~~~~~~~~^^^^^^^^^^
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/nornir/core/inventory.py", line 350, in __getitem__
+    return self.data[item]
+           ~~~~~~~~~^^^^^^
+KeyError: 'lo0'
+
+2024-08-28 17:21:33,084 - nornir.core.task -    ERROR -      start() - Host 'vIOS4': task 'configure_basic_ip_addresses' failed with traceback:
+Traceback (most recent call last):
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/imran/Documents/Automation/Nornir/Runbooks/Cisco_Lab2/Scrapli_Config_IP_Lab1.py", line 14, in configure_basic_ip_addresses
+    f"ip address {task.host[int_name]['ip']} {task.host[int_name]['mask']}",
+                 ~~~~~~~~~^^^^^^^^^^
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/nornir/core/inventory.py", line 350, in __getitem__
+    return self.data[item]
+           ~~~~~~~~~^^^^^^
+KeyError: 'lo0'
+
+2024-08-28 17:21:33,086 - nornir.core.task -    ERROR -      start() - Host 'vIOS1': task 'configure_basic_ip_addresses' failed with traceback:
+Traceback (most recent call last):
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/imran/Documents/Automation/Nornir/Runbooks/Cisco_Lab2/Scrapli_Config_IP_Lab1.py", line 14, in configure_basic_ip_addresses
+    f"ip address {task.host[int_name]['ip']} {task.host[int_name]['mask']}",
+                 ~~~~~~~~~^^^^^^^^^^
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/nornir/core/inventory.py", line 350, in __getitem__
+    return self.data[item]
+           ~~~~~~~~~^^^^^^
+KeyError: 'lo0'
+
+2024-08-28 17:42:56,028 -  nornir.core -     INFO -        run() - Running task 'configure_basic_ip_addresses' with args {} on 4 hosts
+2024-08-28 17:42:56,031 - nornir.core.task -    ERROR -      start() - Host 'vIOS1': task 'configure_basic_ip_addresses' failed with traceback:
+Traceback (most recent call last):
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/imran/Documents/Automation/Nornir/Runbooks/Cisco_Lab2/Scrapli_Config_IP_Lab1.py", line 14, in configure_basic_ip_addresses
+    for int_name in interface_list[index]:
+                    ~~~~~~~~~~~~~~^^^^^^^
+KeyError: 0
+
+2024-08-28 17:42:56,032 - nornir.core.task -    ERROR -      start() - Host 'vIOS2': task 'configure_basic_ip_addresses' failed with traceback:
+Traceback (most recent call last):
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/imran/Documents/Automation/Nornir/Runbooks/Cisco_Lab2/Scrapli_Config_IP_Lab1.py", line 14, in configure_basic_ip_addresses
+    for int_name in interface_list[index]:
+                    ~~~~~~~~~~~~~~^^^^^^^
+KeyError: 0
+
+2024-08-28 17:42:56,033 - nornir.core.task -    ERROR -      start() - Host 'vIOS3': task 'configure_basic_ip_addresses' failed with traceback:
+Traceback (most recent call last):
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/imran/Documents/Automation/Nornir/Runbooks/Cisco_Lab2/Scrapli_Config_IP_Lab1.py", line 14, in configure_basic_ip_addresses
+    for int_name in interface_list[index]:
+                    ~~~~~~~~~~~~~~^^^^^^^
+KeyError: 0
+
+2024-08-28 17:42:56,034 - nornir.core.task -    ERROR -      start() - Host 'vIOS4': task 'configure_basic_ip_addresses' failed with traceback:
+Traceback (most recent call last):
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/imran/Documents/Automation/Nornir/Runbooks/Cisco_Lab2/Scrapli_Config_IP_Lab1.py", line 14, in configure_basic_ip_addresses
+    for int_name in interface_list[index]:
+                    ~~~~~~~~~~~~~~^^^^^^^
+KeyError: 0
+
+2024-08-28 17:46:00,909 -  nornir.core -     INFO -        run() - Running task 'configure_basic_ip_addresses' with args {} on 4 hosts
+2024-08-28 17:46:00,912 - nornir.core.task -    ERROR -      start() - Host 'vIOS1': task 'configure_basic_ip_addresses' failed with traceback:
+Traceback (most recent call last):
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/imran/Documents/Automation/Nornir/Runbooks/Cisco_Lab2/Scrapli_Config_IP_Lab1.py", line 14, in configure_basic_ip_addresses
+    for int_name in interface_list[index]:
+                    ~~~~~~~~~~~~~~^^^^^^^
+KeyError: 0
+
+2024-08-28 17:46:00,913 - nornir.core.task -    ERROR -      start() - Host 'vIOS2': task 'configure_basic_ip_addresses' failed with traceback:
+Traceback (most recent call last):
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/imran/Documents/Automation/Nornir/Runbooks/Cisco_Lab2/Scrapli_Config_IP_Lab1.py", line 14, in configure_basic_ip_addresses
+    for int_name in interface_list[index]:
+                    ~~~~~~~~~~~~~~^^^^^^^
+KeyError: 0
+
+2024-08-28 17:46:00,914 - nornir.core.task -    ERROR -      start() - Host 'vIOS4': task 'configure_basic_ip_addresses' failed with traceback:
+Traceback (most recent call last):
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/imran/Documents/Automation/Nornir/Runbooks/Cisco_Lab2/Scrapli_Config_IP_Lab1.py", line 14, in configure_basic_ip_addresses
+    for int_name in interface_list[index]:
+                    ~~~~~~~~~~~~~~^^^^^^^
+KeyError: 0
+
+2024-08-28 17:46:00,914 - nornir.core.task -    ERROR -      start() - Host 'vIOS3': task 'configure_basic_ip_addresses' failed with traceback:
+Traceback (most recent call last):
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/imran/Documents/Automation/Nornir/Runbooks/Cisco_Lab2/Scrapli_Config_IP_Lab1.py", line 14, in configure_basic_ip_addresses
+    for int_name in interface_list[index]:
+                    ~~~~~~~~~~~~~~^^^^^^^
+KeyError: 0
+
+2024-08-28 20:17:47,788 -  nornir.core -     INFO -        run() - Running task 'configure_basic_ip_addresses' with args {} on 4 hosts
+2024-08-28 20:17:47,794 - nornir.core.task -    ERROR -      start() - Host 'vIOS3': task 'configure_basic_ip_addresses' failed with traceback:
+Traceback (most recent call last):
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/imran/Documents/Automation/Nornir/Runbooks/Cisco_Lab2/Scrapli_Config_IP_Lab1.py", line 14, in configure_basic_ip_addresses
+    int_ip = task.host[index][int_name]['ip']
+             ~~~~~~~~~^^^^^^^
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/nornir/core/inventory.py", line 350, in __getitem__
+    return self.data[item]
+           ~~~~~~~~~^^^^^^
+KeyError: 0
+
+2024-08-28 20:17:47,796 - nornir.core.task -    ERROR -      start() - Host 'vIOS4': task 'configure_basic_ip_addresses' failed with traceback:
+Traceback (most recent call last):
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/imran/Documents/Automation/Nornir/Runbooks/Cisco_Lab2/Scrapli_Config_IP_Lab1.py", line 14, in configure_basic_ip_addresses
+    int_ip = task.host[index][int_name]['ip']
+             ~~~~~~~~~^^^^^^^
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/nornir/core/inventory.py", line 350, in __getitem__
+    return self.data[item]
+           ~~~~~~~~~^^^^^^
+KeyError: 0
+
+2024-08-28 20:17:47,797 - nornir.core.task -    ERROR -      start() - Host 'vIOS2': task 'configure_basic_ip_addresses' failed with traceback:
+Traceback (most recent call last):
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/imran/Documents/Automation/Nornir/Runbooks/Cisco_Lab2/Scrapli_Config_IP_Lab1.py", line 14, in configure_basic_ip_addresses
+    int_ip = task.host[index][int_name]['ip']
+             ~~~~~~~~~^^^^^^^
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/nornir/core/inventory.py", line 350, in __getitem__
+    return self.data[item]
+           ~~~~~~~~~^^^^^^
+KeyError: 0
+
+2024-08-28 20:17:47,797 - nornir.core.task -    ERROR -      start() - Host 'vIOS1': task 'configure_basic_ip_addresses' failed with traceback:
+Traceback (most recent call last):
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/imran/Documents/Automation/Nornir/Runbooks/Cisco_Lab2/Scrapli_Config_IP_Lab1.py", line 14, in configure_basic_ip_addresses
+    int_ip = task.host[index][int_name]['ip']
+             ~~~~~~~~~^^^^^^^
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/nornir/core/inventory.py", line 350, in __getitem__
+    return self.data[item]
+           ~~~~~~~~~^^^^^^
+KeyError: 0
+
+2024-08-28 20:19:35,476 -  nornir.core -     INFO -        run() - Running task 'configure_basic_ip_addresses' with args {} on 4 hosts
+2024-08-28 20:20:42,311 -  nornir.core -     INFO -        run() - Running task 'configure_basic_ip_addresses' with args {} on 4 hosts
+2024-08-28 20:20:42,318 - nornir.core.task -    ERROR -      start() - Host 'vIOS2': task 'configure_basic_ip_addresses' failed with traceback:
+Traceback (most recent call last):
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/imran/Documents/Automation/Nornir/Runbooks/Cisco_Lab2/Scrapli_Config_IP_Lab1.py", line 14, in configure_basic_ip_addresses
+    int_ip = task.host[index][int_name]['ip']
+             ~~~~~~~~~^^^^^^^
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/nornir/core/inventory.py", line 350, in __getitem__
+    return self.data[item]
+           ~~~~~~~~~^^^^^^
+KeyError: 0
+
+2024-08-28 20:20:42,319 - nornir.core.task -    ERROR -      start() - Host 'vIOS1': task 'configure_basic_ip_addresses' failed with traceback:
+Traceback (most recent call last):
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/imran/Documents/Automation/Nornir/Runbooks/Cisco_Lab2/Scrapli_Config_IP_Lab1.py", line 14, in configure_basic_ip_addresses
+    int_ip = task.host[index][int_name]['ip']
+             ~~~~~~~~~^^^^^^^
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/nornir/core/inventory.py", line 350, in __getitem__
+    return self.data[item]
+           ~~~~~~~~~^^^^^^
+KeyError: 0
+
+2024-08-28 20:20:42,320 - nornir.core.task -    ERROR -      start() - Host 'vIOS4': task 'configure_basic_ip_addresses' failed with traceback:
+Traceback (most recent call last):
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/imran/Documents/Automation/Nornir/Runbooks/Cisco_Lab2/Scrapli_Config_IP_Lab1.py", line 14, in configure_basic_ip_addresses
+    int_ip = task.host[index][int_name]['ip']
+             ~~~~~~~~~^^^^^^^
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/nornir/core/inventory.py", line 350, in __getitem__
+    return self.data[item]
+           ~~~~~~~~~^^^^^^
+KeyError: 0
+
+2024-08-28 20:20:42,321 - nornir.core.task -    ERROR -      start() - Host 'vIOS3': task 'configure_basic_ip_addresses' failed with traceback:
+Traceback (most recent call last):
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/imran/Documents/Automation/Nornir/Runbooks/Cisco_Lab2/Scrapli_Config_IP_Lab1.py", line 14, in configure_basic_ip_addresses
+    int_ip = task.host[index][int_name]['ip']
+             ~~~~~~~~~^^^^^^^
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/nornir/core/inventory.py", line 350, in __getitem__
+    return self.data[item]
+           ~~~~~~~~~^^^^^^
+KeyError: 0
+
+2024-08-28 20:21:44,716 -  nornir.core -     INFO -        run() - Running task 'configure_basic_ip_addresses' with args {} on 4 hosts
+2024-08-28 20:21:44,719 - nornir.core.task -    ERROR -      start() - Host 'vIOS4': task 'configure_basic_ip_addresses' failed with traceback:
+Traceback (most recent call last):
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/imran/Documents/Automation/Nornir/Runbooks/Cisco_Lab2/Scrapli_Config_IP_Lab1.py", line 14, in configure_basic_ip_addresses
+    int_ip = task.host[index]
+             ~~~~~~~~~^^^^^^^
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/nornir/core/inventory.py", line 350, in __getitem__
+    return self.data[item]
+           ~~~~~~~~~^^^^^^
+KeyError: 0
+
+2024-08-28 20:21:44,720 - nornir.core.task -    ERROR -      start() - Host 'vIOS2': task 'configure_basic_ip_addresses' failed with traceback:
+Traceback (most recent call last):
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/imran/Documents/Automation/Nornir/Runbooks/Cisco_Lab2/Scrapli_Config_IP_Lab1.py", line 14, in configure_basic_ip_addresses
+    int_ip = task.host[index]
+             ~~~~~~~~~^^^^^^^
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/nornir/core/inventory.py", line 350, in __getitem__
+    return self.data[item]
+           ~~~~~~~~~^^^^^^
+KeyError: 0
+
+2024-08-28 20:21:44,722 - nornir.core.task -    ERROR -      start() - Host 'vIOS3': task 'configure_basic_ip_addresses' failed with traceback:
+Traceback (most recent call last):
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/imran/Documents/Automation/Nornir/Runbooks/Cisco_Lab2/Scrapli_Config_IP_Lab1.py", line 14, in configure_basic_ip_addresses
+    int_ip = task.host[index]
+             ~~~~~~~~~^^^^^^^
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/nornir/core/inventory.py", line 350, in __getitem__
+    return self.data[item]
+           ~~~~~~~~~^^^^^^
+KeyError: 0
+
+2024-08-28 20:21:44,722 - nornir.core.task -    ERROR -      start() - Host 'vIOS1': task 'configure_basic_ip_addresses' failed with traceback:
+Traceback (most recent call last):
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/imran/Documents/Automation/Nornir/Runbooks/Cisco_Lab2/Scrapli_Config_IP_Lab1.py", line 14, in configure_basic_ip_addresses
+    int_ip = task.host[index]
+             ~~~~~~~~~^^^^^^^
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/nornir/core/inventory.py", line 350, in __getitem__
+    return self.data[item]
+           ~~~~~~~~~^^^^^^
+KeyError: 0
+
+2024-08-28 20:22:34,197 -  nornir.core -     INFO -        run() - Running task 'configure_basic_ip_addresses' with args {} on 4 hosts
+2024-08-28 20:22:34,202 - nornir.core.task -    ERROR -      start() - Host 'vIOS3': task 'configure_basic_ip_addresses' failed with traceback:
+Traceback (most recent call last):
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/imran/Documents/Automation/Nornir/Runbooks/Cisco_Lab2/Scrapli_Config_IP_Lab1.py", line 14, in configure_basic_ip_addresses
+    int_ip = task.host[int_name]
+             ~~~~~~~~~^^^^^^^^^^
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/nornir/core/inventory.py", line 350, in __getitem__
+    return self.data[item]
+           ~~~~~~~~~^^^^^^
+TypeError: unhashable type: 'dict_keys'
+
+2024-08-28 20:22:34,203 - nornir.core.task -    ERROR -      start() - Host 'vIOS2': task 'configure_basic_ip_addresses' failed with traceback:
+Traceback (most recent call last):
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/imran/Documents/Automation/Nornir/Runbooks/Cisco_Lab2/Scrapli_Config_IP_Lab1.py", line 14, in configure_basic_ip_addresses
+    int_ip = task.host[int_name]
+             ~~~~~~~~~^^^^^^^^^^
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/nornir/core/inventory.py", line 350, in __getitem__
+    return self.data[item]
+           ~~~~~~~~~^^^^^^
+TypeError: unhashable type: 'dict_keys'
+
+2024-08-28 20:22:34,204 - nornir.core.task -    ERROR -      start() - Host 'vIOS4': task 'configure_basic_ip_addresses' failed with traceback:
+Traceback (most recent call last):
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/imran/Documents/Automation/Nornir/Runbooks/Cisco_Lab2/Scrapli_Config_IP_Lab1.py", line 14, in configure_basic_ip_addresses
+    int_ip = task.host[int_name]
+             ~~~~~~~~~^^^^^^^^^^
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/nornir/core/inventory.py", line 350, in __getitem__
+    return self.data[item]
+           ~~~~~~~~~^^^^^^
+TypeError: unhashable type: 'dict_keys'
+
+2024-08-28 20:22:34,204 - nornir.core.task -    ERROR -      start() - Host 'vIOS1': task 'configure_basic_ip_addresses' failed with traceback:
+Traceback (most recent call last):
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/imran/Documents/Automation/Nornir/Runbooks/Cisco_Lab2/Scrapli_Config_IP_Lab1.py", line 14, in configure_basic_ip_addresses
+    int_ip = task.host[int_name]
+             ~~~~~~~~~^^^^^^^^^^
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/nornir/core/inventory.py", line 350, in __getitem__
+    return self.data[item]
+           ~~~~~~~~~^^^^^^
+TypeError: unhashable type: 'dict_keys'
+
+2024-08-28 20:51:30,556 -  nornir.core -     INFO -        run() - Running task 'configure_basic_ip_addresses' with args {} on 4 hosts
+2024-08-28 21:20:01,259 -  nornir.core -     INFO -        run() - Running task 'configure_basic_ip_addresses' with args {} on 4 hosts
+2024-08-28 21:20:01,262 - nornir.core.task -    ERROR -      start() - Host 'vIOS3': task 'configure_basic_ip_addresses' failed with traceback:
+Traceback (most recent call last):
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/imran/Documents/Automation/Nornir/Runbooks/Cisco_Lab2/Scrapli_Config_IP_Lab1.py", line 14, in configure_basic_ip_addresses
+    while (index < interfaceslist.length()):
+                   ^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'list' object has no attribute 'length'
+
+2024-08-28 21:20:01,264 - nornir.core.task -    ERROR -      start() - Host 'vIOS4': task 'configure_basic_ip_addresses' failed with traceback:
+Traceback (most recent call last):
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/imran/Documents/Automation/Nornir/Runbooks/Cisco_Lab2/Scrapli_Config_IP_Lab1.py", line 14, in configure_basic_ip_addresses
+    while (index < interfaceslist.length()):
+                   ^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'list' object has no attribute 'length'
+
+2024-08-28 21:20:01,265 - nornir.core.task -    ERROR -      start() - Host 'vIOS2': task 'configure_basic_ip_addresses' failed with traceback:
+Traceback (most recent call last):
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/imran/Documents/Automation/Nornir/Runbooks/Cisco_Lab2/Scrapli_Config_IP_Lab1.py", line 14, in configure_basic_ip_addresses
+    while (index < interfaceslist.length()):
+                   ^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'list' object has no attribute 'length'
+
+2024-08-28 21:20:01,266 - nornir.core.task -    ERROR -      start() - Host 'vIOS1': task 'configure_basic_ip_addresses' failed with traceback:
+Traceback (most recent call last):
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/imran/Documents/Automation/Nornir/Runbooks/Cisco_Lab2/Scrapli_Config_IP_Lab1.py", line 14, in configure_basic_ip_addresses
+    while (index < interfaceslist.length()):
+                   ^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'list' object has no attribute 'length'
+
+2024-08-28 21:20:42,547 -  nornir.core -     INFO -        run() - Running task 'configure_basic_ip_addresses' with args {} on 4 hosts
+2024-08-28 21:20:42,553 - nornir.core.task -    ERROR -      start() - Host 'vIOS3': task 'configure_basic_ip_addresses' failed with traceback:
+Traceback (most recent call last):
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/imran/Documents/Automation/Nornir/Runbooks/Cisco_Lab2/Scrapli_Config_IP_Lab1.py", line 14, in configure_basic_ip_addresses
+    while (index < interfaceslist.len()):
+                   ^^^^^^^^^^^^^^^^^^
+AttributeError: 'list' object has no attribute 'len'
+
+2024-08-28 21:20:42,554 - nornir.core.task -    ERROR -      start() - Host 'vIOS1': task 'configure_basic_ip_addresses' failed with traceback:
+Traceback (most recent call last):
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/imran/Documents/Automation/Nornir/Runbooks/Cisco_Lab2/Scrapli_Config_IP_Lab1.py", line 14, in configure_basic_ip_addresses
+    while (index < interfaceslist.len()):
+                   ^^^^^^^^^^^^^^^^^^
+AttributeError: 'list' object has no attribute 'len'
+
+2024-08-28 21:20:42,554 - nornir.core.task -    ERROR -      start() - Host 'vIOS4': task 'configure_basic_ip_addresses' failed with traceback:
+Traceback (most recent call last):
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/imran/Documents/Automation/Nornir/Runbooks/Cisco_Lab2/Scrapli_Config_IP_Lab1.py", line 14, in configure_basic_ip_addresses
+    while (index < interfaceslist.len()):
+                   ^^^^^^^^^^^^^^^^^^
+AttributeError: 'list' object has no attribute 'len'
+
+2024-08-28 21:20:42,555 - nornir.core.task -    ERROR -      start() - Host 'vIOS2': task 'configure_basic_ip_addresses' failed with traceback:
+Traceback (most recent call last):
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/imran/Documents/Automation/Nornir/Runbooks/Cisco_Lab2/Scrapli_Config_IP_Lab1.py", line 14, in configure_basic_ip_addresses
+    while (index < interfaceslist.len()):
+                   ^^^^^^^^^^^^^^^^^^
+AttributeError: 'list' object has no attribute 'len'
+
+2024-08-28 21:22:19,763 -  nornir.core -     INFO -        run() - Running task 'configure_basic_ip_addresses' with args {} on 4 hosts
+2024-08-28 21:22:19,767 - nornir.core.task -    ERROR -      start() - Host 'vIOS3': task 'configure_basic_ip_addresses' failed with traceback:
+Traceback (most recent call last):
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/imran/Documents/Automation/Nornir/Runbooks/Cisco_Lab2/Scrapli_Config_IP_Lab1.py", line 16, in configure_basic_ip_addresses
+    int_ip = interfaceslist[index][int_name]['ip']
+             ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+TypeError: unhashable type: 'dict_keys'
+
+2024-08-28 21:22:19,768 - nornir.core.task -    ERROR -      start() - Host 'vIOS4': task 'configure_basic_ip_addresses' failed with traceback:
+Traceback (most recent call last):
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/imran/Documents/Automation/Nornir/Runbooks/Cisco_Lab2/Scrapli_Config_IP_Lab1.py", line 16, in configure_basic_ip_addresses
+    int_ip = interfaceslist[index][int_name]['ip']
+             ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+TypeError: unhashable type: 'dict_keys'
+
+2024-08-28 21:22:19,767 - nornir.core.task -    ERROR -      start() - Host 'vIOS1': task 'configure_basic_ip_addresses' failed with traceback:
+Traceback (most recent call last):
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/imran/Documents/Automation/Nornir/Runbooks/Cisco_Lab2/Scrapli_Config_IP_Lab1.py", line 16, in configure_basic_ip_addresses
+    int_ip = interfaceslist[index][int_name]['ip']
+             ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+TypeError: unhashable type: 'dict_keys'
+
+2024-08-28 21:22:19,769 - nornir.core.task -    ERROR -      start() - Host 'vIOS2': task 'configure_basic_ip_addresses' failed with traceback:
+Traceback (most recent call last):
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/imran/Documents/Automation/Nornir/Runbooks/Cisco_Lab2/Scrapli_Config_IP_Lab1.py", line 16, in configure_basic_ip_addresses
+    int_ip = interfaceslist[index][int_name]['ip']
+             ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+TypeError: unhashable type: 'dict_keys'
+
+2024-08-28 21:23:58,611 -  nornir.core -     INFO -        run() - Running task 'configure_basic_ip_addresses' with args {} on 4 hosts
+2024-08-28 21:23:58,618 - nornir.core.task -    ERROR -      start() - Host 'vIOS1': task 'configure_basic_ip_addresses' failed with traceback:
+Traceback (most recent call last):
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/imran/Documents/Automation/Nornir/Runbooks/Cisco_Lab2/Scrapli_Config_IP_Lab1.py", line 18, in configure_basic_ip_addresses
+    int_config = [f"interface {int_name}", f"ip address {int_ip} {int_mask}"]
+                                                         ^^^^^^
+NameError: name 'int_ip' is not defined
+
+2024-08-28 21:23:58,620 - nornir.core.task -    ERROR -      start() - Host 'vIOS2': task 'configure_basic_ip_addresses' failed with traceback:
+Traceback (most recent call last):
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/imran/Documents/Automation/Nornir/Runbooks/Cisco_Lab2/Scrapli_Config_IP_Lab1.py", line 18, in configure_basic_ip_addresses
+    int_config = [f"interface {int_name}", f"ip address {int_ip} {int_mask}"]
+                                                         ^^^^^^
+NameError: name 'int_ip' is not defined
+
+2024-08-28 21:23:58,622 - nornir.core.task -    ERROR -      start() - Host 'vIOS4': task 'configure_basic_ip_addresses' failed with traceback:
+Traceback (most recent call last):
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/imran/Documents/Automation/Nornir/Runbooks/Cisco_Lab2/Scrapli_Config_IP_Lab1.py", line 18, in configure_basic_ip_addresses
+    int_config = [f"interface {int_name}", f"ip address {int_ip} {int_mask}"]
+                                                         ^^^^^^
+NameError: name 'int_ip' is not defined
+
+2024-08-28 21:23:58,624 - nornir.core.task -    ERROR -      start() - Host 'vIOS3': task 'configure_basic_ip_addresses' failed with traceback:
+Traceback (most recent call last):
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/imran/Documents/Automation/Nornir/Runbooks/Cisco_Lab2/Scrapli_Config_IP_Lab1.py", line 18, in configure_basic_ip_addresses
+    int_config = [f"interface {int_name}", f"ip address {int_ip} {int_mask}"]
+                                                         ^^^^^^
+NameError: name 'int_ip' is not defined
+
+2024-08-28 21:25:09,363 -  nornir.core -     INFO -        run() - Running task 'configure_basic_ip_addresses' with args {} on 4 hosts
+2024-08-28 21:25:09,364 - nornir.core.task -    ERROR -      start() - Host 'vIOS1': task 'configure_basic_ip_addresses' failed with traceback:
+Traceback (most recent call last):
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/imran/Documents/Automation/Nornir/Runbooks/Cisco_Lab2/Scrapli_Config_IP_Lab1.py", line 16, in configure_basic_ip_addresses
+    int_ip = x.x.x.x #interfaceslist[index][int_name]['ip']
+             ^
+NameError: name 'x' is not defined
+
+2024-08-28 21:25:09,365 - nornir.core.task -    ERROR -      start() - Host 'vIOS2': task 'configure_basic_ip_addresses' failed with traceback:
+Traceback (most recent call last):
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/imran/Documents/Automation/Nornir/Runbooks/Cisco_Lab2/Scrapli_Config_IP_Lab1.py", line 16, in configure_basic_ip_addresses
+    int_ip = x.x.x.x #interfaceslist[index][int_name]['ip']
+             ^
+NameError: name 'x' is not defined
+
+2024-08-28 21:25:09,366 - nornir.core.task -    ERROR -      start() - Host 'vIOS4': task 'configure_basic_ip_addresses' failed with traceback:
+Traceback (most recent call last):
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/imran/Documents/Automation/Nornir/Runbooks/Cisco_Lab2/Scrapli_Config_IP_Lab1.py", line 16, in configure_basic_ip_addresses
+    int_ip = x.x.x.x #interfaceslist[index][int_name]['ip']
+             ^
+NameError: name 'x' is not defined
+
+2024-08-28 21:25:09,367 - nornir.core.task -    ERROR -      start() - Host 'vIOS3': task 'configure_basic_ip_addresses' failed with traceback:
+Traceback (most recent call last):
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/imran/Documents/Automation/Nornir/Runbooks/Cisco_Lab2/Scrapli_Config_IP_Lab1.py", line 16, in configure_basic_ip_addresses
+    int_ip = x.x.x.x #interfaceslist[index][int_name]['ip']
+             ^
+NameError: name 'x' is not defined
+
+2024-08-28 21:25:26,918 -  nornir.core -     INFO -        run() - Running task 'configure_basic_ip_addresses' with args {} on 4 hosts
+2024-08-28 21:36:27,808 -  nornir.core -     INFO -        run() - Running task 'configure_basic_ip_addresses' with args {} on 4 hosts
+2024-08-28 21:37:01,866 -  nornir.core -     INFO -        run() - Running task 'configure_basic_ip_addresses' with args {} on 4 hosts
+2024-08-28 21:38:39,038 -  nornir.core -     INFO -        run() - Running task 'configure_basic_ip_addresses' with args {} on 4 hosts
+2024-08-28 21:47:42,050 -  nornir.core -     INFO -        run() - Running task 'configure_basic_ip_addresses' with args {} on 4 hosts
+2024-08-28 21:53:59,943 -  nornir.core -     INFO -        run() - Running task 'configure_basic_ip_addresses' with args {} on 4 hosts
+2024-08-28 21:53:59,947 - nornir.core.task -    ERROR -      start() - Host 'vIOS1': task 'configure_basic_ip_addresses' failed with traceback:
+Traceback (most recent call last):
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/imran/Documents/Automation/Nornir/Runbooks/Cisco_Lab2/Scrapli_Config_IP_Lab1.py", line 15, in configure_basic_ip_addresses
+    int_name = interfaceslist[index].keys ()['name']
+               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^
+TypeError: 'dict_keys' object is not subscriptable
+
+2024-08-28 21:53:59,947 - nornir.core.task -    ERROR -      start() - Host 'vIOS2': task 'configure_basic_ip_addresses' failed with traceback:
+Traceback (most recent call last):
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/imran/Documents/Automation/Nornir/Runbooks/Cisco_Lab2/Scrapli_Config_IP_Lab1.py", line 15, in configure_basic_ip_addresses
+    int_name = interfaceslist[index].keys ()['name']
+               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^
+TypeError: 'dict_keys' object is not subscriptable
+
+2024-08-28 21:53:59,948 - nornir.core.task -    ERROR -      start() - Host 'vIOS3': task 'configure_basic_ip_addresses' failed with traceback:
+Traceback (most recent call last):
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/imran/Documents/Automation/Nornir/Runbooks/Cisco_Lab2/Scrapli_Config_IP_Lab1.py", line 15, in configure_basic_ip_addresses
+    int_name = interfaceslist[index].keys ()['name']
+               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^
+TypeError: 'dict_keys' object is not subscriptable
+
+2024-08-28 21:53:59,949 - nornir.core.task -    ERROR -      start() - Host 'vIOS4': task 'configure_basic_ip_addresses' failed with traceback:
+Traceback (most recent call last):
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/imran/Documents/Automation/Nornir/Runbooks/Cisco_Lab2/Scrapli_Config_IP_Lab1.py", line 15, in configure_basic_ip_addresses
+    int_name = interfaceslist[index].keys ()['name']
+               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^
+TypeError: 'dict_keys' object is not subscriptable
+
+2024-08-28 21:55:11,034 -  nornir.core -     INFO -        run() - Running task 'configure_basic_ip_addresses' with args {} on 4 hosts
+2024-08-28 21:55:11,035 - nornir.core.task -    ERROR -      start() - Host 'vIOS1': task 'configure_basic_ip_addresses' failed with traceback:
+Traceback (most recent call last):
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/imran/Documents/Automation/Nornir/Runbooks/Cisco_Lab2/Scrapli_Config_IP_Lab1.py", line 15, in configure_basic_ip_addresses
+    int_name = interfaceslist[index]['name']
+               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^
+KeyError: 'name'
+
+2024-08-28 21:55:11,036 - nornir.core.task -    ERROR -      start() - Host 'vIOS2': task 'configure_basic_ip_addresses' failed with traceback:
+Traceback (most recent call last):
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/imran/Documents/Automation/Nornir/Runbooks/Cisco_Lab2/Scrapli_Config_IP_Lab1.py", line 15, in configure_basic_ip_addresses
+    int_name = interfaceslist[index]['name']
+               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^
+KeyError: 'name'
+
+2024-08-28 21:55:11,037 - nornir.core.task -    ERROR -      start() - Host 'vIOS3': task 'configure_basic_ip_addresses' failed with traceback:
+Traceback (most recent call last):
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/imran/Documents/Automation/Nornir/Runbooks/Cisco_Lab2/Scrapli_Config_IP_Lab1.py", line 15, in configure_basic_ip_addresses
+    int_name = interfaceslist[index]['name']
+               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^
+KeyError: 'name'
+
+2024-08-28 21:55:11,038 - nornir.core.task -    ERROR -      start() - Host 'vIOS4': task 'configure_basic_ip_addresses' failed with traceback:
+Traceback (most recent call last):
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/imran/Documents/Automation/Nornir/Runbooks/Cisco_Lab2/Scrapli_Config_IP_Lab1.py", line 15, in configure_basic_ip_addresses
+    int_name = interfaceslist[index]['name']
+               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^
+KeyError: 'name'
+
+2024-08-28 21:55:33,279 -  nornir.core -     INFO -        run() - Running task 'configure_basic_ip_addresses' with args {} on 4 hosts
+2024-08-28 21:55:33,281 - nornir.core.task -    ERROR -      start() - Host 'vIOS1': task 'configure_basic_ip_addresses' failed with traceback:
+Traceback (most recent call last):
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/imran/Documents/Automation/Nornir/Runbooks/Cisco_Lab2/Scrapli_Config_IP_Lab1.py", line 15, in configure_basic_ip_addresses
+    int_name = interfaceslist[index]['lo0']['name']
+               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^
+KeyError: 'lo0'
+
+2024-08-28 21:55:33,282 - nornir.core.task -    ERROR -      start() - Host 'vIOS4': task 'configure_basic_ip_addresses' failed with traceback:
+Traceback (most recent call last):
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/imran/Documents/Automation/Nornir/Runbooks/Cisco_Lab2/Scrapli_Config_IP_Lab1.py", line 15, in configure_basic_ip_addresses
+    int_name = interfaceslist[index]['lo0']['name']
+               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^
+KeyError: 'lo0'
+
+2024-08-28 21:55:33,283 - nornir.core.task -    ERROR -      start() - Host 'vIOS2': task 'configure_basic_ip_addresses' failed with traceback:
+Traceback (most recent call last):
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/imran/Documents/Automation/Nornir/Runbooks/Cisco_Lab2/Scrapli_Config_IP_Lab1.py", line 15, in configure_basic_ip_addresses
+    int_name = interfaceslist[index]['lo0']['name']
+               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^
+KeyError: 'lo0'
+
+2024-08-28 21:55:33,284 - nornir.core.task -    ERROR -      start() - Host 'vIOS3': task 'configure_basic_ip_addresses' failed with traceback:
+Traceback (most recent call last):
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/imran/Documents/Automation/Nornir/Runbooks/Cisco_Lab2/Scrapli_Config_IP_Lab1.py", line 15, in configure_basic_ip_addresses
+    int_name = interfaceslist[index]['lo0']['name']
+               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^
+KeyError: 'lo0'
+
+2024-08-28 22:00:12,842 -  nornir.core -     INFO -        run() - Running task 'configure_basic_ip_addresses' with args {} on 4 hosts
+2024-08-28 22:00:12,848 - nornir.core.task -    ERROR -      start() - Host 'vIOS2': task 'configure_basic_ip_addresses' failed with traceback:
+Traceback (most recent call last):
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/imran/Documents/Automation/Nornir/Runbooks/Cisco_Lab2/Scrapli_Config_IP_Lab1.py", line 15, in configure_basic_ip_addresses
+    int_name = interfaceslist[index].task.host['name']
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'dict' object has no attribute 'task'
+
+2024-08-28 22:00:12,849 - nornir.core.task -    ERROR -      start() - Host 'vIOS4': task 'configure_basic_ip_addresses' failed with traceback:
+Traceback (most recent call last):
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/imran/Documents/Automation/Nornir/Runbooks/Cisco_Lab2/Scrapli_Config_IP_Lab1.py", line 15, in configure_basic_ip_addresses
+    int_name = interfaceslist[index].task.host['name']
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'dict' object has no attribute 'task'
+
+2024-08-28 22:00:12,850 - nornir.core.task -    ERROR -      start() - Host 'vIOS1': task 'configure_basic_ip_addresses' failed with traceback:
+Traceback (most recent call last):
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/imran/Documents/Automation/Nornir/Runbooks/Cisco_Lab2/Scrapli_Config_IP_Lab1.py", line 15, in configure_basic_ip_addresses
+    int_name = interfaceslist[index].task.host['name']
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'dict' object has no attribute 'task'
+
+2024-08-28 22:00:12,851 - nornir.core.task -    ERROR -      start() - Host 'vIOS3': task 'configure_basic_ip_addresses' failed with traceback:
+Traceback (most recent call last):
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/imran/Documents/Automation/Nornir/Runbooks/Cisco_Lab2/Scrapli_Config_IP_Lab1.py", line 15, in configure_basic_ip_addresses
+    int_name = interfaceslist[index].task.host['name']
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'dict' object has no attribute 'task'
+
+2024-08-28 22:01:55,393 -  nornir.core -     INFO -        run() - Running task 'configure_basic_ip_addresses' with args {} on 4 hosts
+2024-08-28 22:17:19,657 -  nornir.core -     INFO -        run() - Running task 'configure_basic_ip_addresses' with args {} on 4 hosts
+2024-08-28 22:17:19,662 - nornir.core.task -    ERROR -      start() - Host 'vIOS2': task 'configure_basic_ip_addresses' failed with traceback:
+Traceback (most recent call last):
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/imran/Documents/Automation/Nornir/Runbooks/Cisco_Lab2/Scrapli_Config_IP_Lab1.py", line 15, in configure_basic_ip_addresses
+    int_name = interfaceslist[index].value()['name']
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'dict' object has no attribute 'value'. Did you mean: 'values'?
+
+2024-08-28 22:17:19,663 - nornir.core.task -    ERROR -      start() - Host 'vIOS4': task 'configure_basic_ip_addresses' failed with traceback:
+Traceback (most recent call last):
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/imran/Documents/Automation/Nornir/Runbooks/Cisco_Lab2/Scrapli_Config_IP_Lab1.py", line 15, in configure_basic_ip_addresses
+    int_name = interfaceslist[index].value()['name']
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'dict' object has no attribute 'value'. Did you mean: 'values'?
+
+2024-08-28 22:17:19,666 - nornir.core.task -    ERROR -      start() - Host 'vIOS1': task 'configure_basic_ip_addresses' failed with traceback:
+Traceback (most recent call last):
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/imran/Documents/Automation/Nornir/Runbooks/Cisco_Lab2/Scrapli_Config_IP_Lab1.py", line 15, in configure_basic_ip_addresses
+    int_name = interfaceslist[index].value()['name']
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'dict' object has no attribute 'value'. Did you mean: 'values'?
+
+2024-08-28 22:17:19,667 - nornir.core.task -    ERROR -      start() - Host 'vIOS3': task 'configure_basic_ip_addresses' failed with traceback:
+Traceback (most recent call last):
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/imran/Documents/Automation/Nornir/Runbooks/Cisco_Lab2/Scrapli_Config_IP_Lab1.py", line 15, in configure_basic_ip_addresses
+    int_name = interfaceslist[index].value()['name']
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'dict' object has no attribute 'value'. Did you mean: 'values'?
+
+2024-08-28 22:17:39,890 -  nornir.core -     INFO -        run() - Running task 'configure_basic_ip_addresses' with args {} on 4 hosts
+2024-08-28 22:17:39,895 - nornir.core.task -    ERROR -      start() - Host 'vIOS1': task 'configure_basic_ip_addresses' failed with traceback:
+Traceback (most recent call last):
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/imran/Documents/Automation/Nornir/Runbooks/Cisco_Lab2/Scrapli_Config_IP_Lab1.py", line 15, in configure_basic_ip_addresses
+    int_name = interfaceslist[index].values()['name']
+               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^
+TypeError: 'dict_values' object is not subscriptable
+
+2024-08-28 22:17:39,897 - nornir.core.task -    ERROR -      start() - Host 'vIOS2': task 'configure_basic_ip_addresses' failed with traceback:
+Traceback (most recent call last):
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/imran/Documents/Automation/Nornir/Runbooks/Cisco_Lab2/Scrapli_Config_IP_Lab1.py", line 15, in configure_basic_ip_addresses
+    int_name = interfaceslist[index].values()['name']
+               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^
+TypeError: 'dict_values' object is not subscriptable
+
+2024-08-28 22:17:39,898 - nornir.core.task -    ERROR -      start() - Host 'vIOS4': task 'configure_basic_ip_addresses' failed with traceback:
+Traceback (most recent call last):
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/imran/Documents/Automation/Nornir/Runbooks/Cisco_Lab2/Scrapli_Config_IP_Lab1.py", line 15, in configure_basic_ip_addresses
+    int_name = interfaceslist[index].values()['name']
+               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^
+TypeError: 'dict_values' object is not subscriptable
+
+2024-08-28 22:17:39,899 - nornir.core.task -    ERROR -      start() - Host 'vIOS3': task 'configure_basic_ip_addresses' failed with traceback:
+Traceback (most recent call last):
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/imran/Documents/Automation/Nornir/Runbooks/Cisco_Lab2/Scrapli_Config_IP_Lab1.py", line 15, in configure_basic_ip_addresses
+    int_name = interfaceslist[index].values()['name']
+               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^
+TypeError: 'dict_values' object is not subscriptable
+
+2024-08-28 22:22:47,911 -  nornir.core -     INFO -        run() - Running task 'configure_basic_ip_addresses' with args {} on 4 hosts
+2024-08-28 22:22:47,914 - nornir.core.task -    ERROR -      start() - Host 'vIOS1': task 'configure_basic_ip_addresses' failed with traceback:
+Traceback (most recent call last):
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/imran/Documents/Automation/Nornir/Runbooks/Cisco_Lab2/Scrapli_Config_IP_Lab1.py", line 17, in configure_basic_ip_addresses
+    int_name = key['name']
+               ~~~^^^^^^^^
+TypeError: string indices must be integers, not 'str'
+
+2024-08-28 22:22:47,915 - nornir.core.task -    ERROR -      start() - Host 'vIOS3': task 'configure_basic_ip_addresses' failed with traceback:
+Traceback (most recent call last):
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/imran/Documents/Automation/Nornir/Runbooks/Cisco_Lab2/Scrapli_Config_IP_Lab1.py", line 17, in configure_basic_ip_addresses
+    int_name = key['name']
+               ~~~^^^^^^^^
+TypeError: string indices must be integers, not 'str'
+
+2024-08-28 22:22:47,916 - nornir.core.task -    ERROR -      start() - Host 'vIOS2': task 'configure_basic_ip_addresses' failed with traceback:
+Traceback (most recent call last):
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/imran/Documents/Automation/Nornir/Runbooks/Cisco_Lab2/Scrapli_Config_IP_Lab1.py", line 17, in configure_basic_ip_addresses
+    int_name = key['name']
+               ~~~^^^^^^^^
+TypeError: string indices must be integers, not 'str'
+
+2024-08-28 22:22:47,916 - nornir.core.task -    ERROR -      start() - Host 'vIOS4': task 'configure_basic_ip_addresses' failed with traceback:
+Traceback (most recent call last):
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/imran/Documents/Automation/Nornir/Runbooks/Cisco_Lab2/Scrapli_Config_IP_Lab1.py", line 17, in configure_basic_ip_addresses
+    int_name = key['name']
+               ~~~^^^^^^^^
+TypeError: string indices must be integers, not 'str'
+
+2024-08-28 22:27:59,159 -  nornir.core -     INFO -        run() - Running task 'configure_basic_ip_addresses' with args {} on 4 hosts
+2024-08-28 22:29:20,691 -  nornir.core -     INFO -        run() - Running task 'configure_basic_ip_addresses' with args {} on 4 hosts
+2024-08-28 22:35:43,077 -  nornir.core -     INFO -        run() - Running task 'configure_basic_ip_addresses' with args {} on 4 hosts
+2024-08-28 22:35:44,041 - nornir.core.task -    ERROR -      start() - Host 'vIOS4': task 'configure_basic_ip_addresses' failed with traceback:
+Traceback (most recent call last):
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/imran/Documents/Automation/Nornir/Runbooks/Cisco_Lab2/Scrapli_Config_IP_Lab1.py", line 21, in configure_basic_ip_addresses
+    task.run (task=send_configs, configs=int_config)
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: send_configs (failed)
+
+
+2024-08-28 22:35:44,043 - nornir.core.task -    ERROR -      start() - Host 'vIOS1': task 'configure_basic_ip_addresses' failed with traceback:
+Traceback (most recent call last):
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/imran/Documents/Automation/Nornir/Runbooks/Cisco_Lab2/Scrapli_Config_IP_Lab1.py", line 21, in configure_basic_ip_addresses
+    task.run (task=send_configs, configs=int_config)
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: send_configs (failed)
+
+
+2024-08-28 22:35:44,061 - nornir.core.task -    ERROR -      start() - Host 'vIOS3': task 'configure_basic_ip_addresses' failed with traceback:
+Traceback (most recent call last):
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/imran/Documents/Automation/Nornir/Runbooks/Cisco_Lab2/Scrapli_Config_IP_Lab1.py", line 21, in configure_basic_ip_addresses
+    task.run (task=send_configs, configs=int_config)
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: send_configs (failed)
+
+
+2024-08-28 22:35:44,412 - nornir.core.task -    ERROR -      start() - Host 'vIOS2': task 'configure_basic_ip_addresses' failed with traceback:
+Traceback (most recent call last):
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/imran/Documents/Automation/Nornir/Runbooks/Cisco_Lab2/Scrapli_Config_IP_Lab1.py", line 21, in configure_basic_ip_addresses
+    task.run (task=send_configs, configs=int_config)
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: send_configs (failed)
+
+
+2024-08-28 22:38:03,069 -  nornir.core -     INFO -        run() - Running task 'configure_basic_ip_addresses' with args {} on 4 hosts
+2024-08-28 22:39:51,995 -  nornir.core -     INFO -        run() - Running task 'configure_basic_ip_addresses' with args {} on 4 hosts
+2024-08-28 22:40:54,060 -  nornir.core -     INFO -        run() - Running task 'configure_basic_ip_addresses' with args {} on 4 hosts
+2024-08-28 22:54:29,869 -  nornir.core -     INFO -        run() - Running task 'configure_basic_ip_addresses' with args {} on 4 hosts
+2024-08-31 14:12:42,379 -  nornir.core -     INFO -        run() - Running task 'config_aaa_parser_users' with args {} on 4 hosts
+2024-08-31 14:12:42,435 - nornir.core.task -    ERROR -      start() - Host 'vIOS4': task 'send_commands' failed with traceback:
+Traceback (most recent call last):
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/scrapli/transport/plugins/system/ptyprocess.py", line 520, in read
+    s = self.fileobj.read1(size)
+        ^^^^^^^^^^^^^^^^^^^^^^^^
+OSError: [Errno 5] Input/output error
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/scrapli/transport/plugins/system/transport.py", line 179, in read
+    buf = self.session.read(65535)
+          ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/scrapli/transport/plugins/system/ptyprocess.py", line 525, in read
+    raise EOFError("End Of File (EOF). Exception style platform.")
+EOFError: End Of File (EOF). Exception style platform.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/nornir_scrapli/tasks/core/send_commands.py", line 44, in send_commands
+    scrapli_conn = task.host.get_connection("scrapli", task.nornir.config)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/nornir/core/inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/nornir/core/inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/nornir_scrapli/connection.py", line 106, in open
+    connection.open()
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/scrapli/driver/base/sync_driver.py", line 106, in open
+    self.channel.channel_authenticate_ssh(
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/scrapli/decorators.py", line 224, in decorate
+    return _multiprocessing_timeout(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/scrapli/decorators.py", line 115, in _multiprocessing_timeout
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/concurrent/futures/_base.py", line 449, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/concurrent/futures/_base.py", line 401, in __get_result
+    raise self._exception
+  File "/usr/lib/python3.12/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/scrapli/channel/sync_channel.py", line 294, in channel_authenticate_ssh
+    buf = self.read()
+          ^^^^^^^^^^^
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/scrapli/channel/sync_channel.py", line 71, in read
+    buf = self.transport.read()
+          ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/scrapli/decorators.py", line 224, in decorate
+    return _multiprocessing_timeout(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/scrapli/decorators.py", line 115, in _multiprocessing_timeout
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/concurrent/futures/_base.py", line 449, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/concurrent/futures/_base.py", line 401, in __get_result
+    raise self._exception
+  File "/usr/lib/python3.12/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/scrapli/transport/plugins/system/transport.py", line 186, in read
+    raise ScrapliConnectionError(msg) from exc
+scrapli.exceptions.ScrapliConnectionError: encountered EOF reading from transport; typically means the device closed the connection
+
+2024-08-31 14:12:42,435 - nornir.core.task -    ERROR -      start() - Host 'vIOS4': task 'config_basic_aaa' failed with traceback:
+Traceback (most recent call last):
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/imran/Documents/Automation/Nornir/Runbooks/Cisco_Lab2/2_Scrapli_Config_AAA_ParserView_username_Lab2.py", line 22, in config_basic_aaa
+    task.run (task=send_commands, commands=aaa_cmds)
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: send_commands (failed)
+
+
+2024-08-31 14:12:42,436 - nornir.core.task -    ERROR -      start() - Host 'vIOS4': task 'config_aaa_parser_users' failed with traceback:
+Traceback (most recent call last):
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/imran/Documents/Automation/Nornir/Runbooks/Cisco_Lab2/2_Scrapli_Config_AAA_ParserView_username_Lab2.py", line 48, in config_aaa_parser_users
+    task.run (task=config_basic_aaa)
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: config_basic_aaa (failed)
+
+
+2024-08-31 14:12:43,197 - nornir.core.task -    ERROR -      start() - Host 'vIOS3': task 'config_basic_aaa' failed with traceback:
+Traceback (most recent call last):
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/imran/Documents/Automation/Nornir/Runbooks/Cisco_Lab2/2_Scrapli_Config_AAA_ParserView_username_Lab2.py", line 22, in config_basic_aaa
+    task.run (task=send_commands, commands=aaa_cmds)
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: send_commands (failed)
+
+
+2024-08-31 14:12:43,198 - nornir.core.task -    ERROR -      start() - Host 'vIOS3': task 'config_aaa_parser_users' failed with traceback:
+Traceback (most recent call last):
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/imran/Documents/Automation/Nornir/Runbooks/Cisco_Lab2/2_Scrapli_Config_AAA_ParserView_username_Lab2.py", line 48, in config_aaa_parser_users
+    task.run (task=config_basic_aaa)
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: config_basic_aaa (failed)
+
+
+2024-08-31 14:12:43,225 - nornir.core.task -    ERROR -      start() - Host 'vIOS2': task 'config_basic_aaa' failed with traceback:
+Traceback (most recent call last):
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/imran/Documents/Automation/Nornir/Runbooks/Cisco_Lab2/2_Scrapli_Config_AAA_ParserView_username_Lab2.py", line 22, in config_basic_aaa
+    task.run (task=send_commands, commands=aaa_cmds)
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: send_commands (failed)
+
+
+2024-08-31 14:12:43,226 - nornir.core.task -    ERROR -      start() - Host 'vIOS2': task 'config_aaa_parser_users' failed with traceback:
+Traceback (most recent call last):
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/imran/Documents/Automation/Nornir/Runbooks/Cisco_Lab2/2_Scrapli_Config_AAA_ParserView_username_Lab2.py", line 48, in config_aaa_parser_users
+    task.run (task=config_basic_aaa)
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: config_basic_aaa (failed)
+
+
+2024-08-31 14:12:43,370 - nornir.core.task -    ERROR -      start() - Host 'vIOS1': task 'config_basic_aaa' failed with traceback:
+Traceback (most recent call last):
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/imran/Documents/Automation/Nornir/Runbooks/Cisco_Lab2/2_Scrapli_Config_AAA_ParserView_username_Lab2.py", line 22, in config_basic_aaa
+    task.run (task=send_commands, commands=aaa_cmds)
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: send_commands (failed)
+
+
+2024-08-31 14:12:43,370 - nornir.core.task -    ERROR -      start() - Host 'vIOS1': task 'config_aaa_parser_users' failed with traceback:
+Traceback (most recent call last):
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/imran/Documents/Automation/Nornir/Runbooks/Cisco_Lab2/2_Scrapli_Config_AAA_ParserView_username_Lab2.py", line 48, in config_aaa_parser_users
+    task.run (task=config_basic_aaa)
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: config_basic_aaa (failed)
+
+
+2024-08-31 14:20:50,698 -  nornir.core -     INFO -        run() - Running task 'config_aaa_parser_users' with args {} on 4 hosts
+2024-08-31 14:20:50,770 - nornir.core.task -    ERROR -      start() - Host 'vIOS4': task 'send_configs' failed with traceback:
+Traceback (most recent call last):
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/scrapli/transport/plugins/system/ptyprocess.py", line 520, in read
+    s = self.fileobj.read1(size)
+        ^^^^^^^^^^^^^^^^^^^^^^^^
+OSError: [Errno 5] Input/output error
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/scrapli/transport/plugins/system/transport.py", line 179, in read
+    buf = self.session.read(65535)
+          ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/scrapli/transport/plugins/system/ptyprocess.py", line 525, in read
+    raise EOFError("End Of File (EOF). Exception style platform.")
+EOFError: End Of File (EOF). Exception style platform.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/nornir_scrapli/tasks/core/send_configs.py", line 59, in send_configs
+    scrapli_conn = task.host.get_connection("scrapli", task.nornir.config)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/nornir/core/inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/nornir/core/inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/nornir_scrapli/connection.py", line 106, in open
+    connection.open()
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/scrapli/driver/base/sync_driver.py", line 106, in open
+    self.channel.channel_authenticate_ssh(
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/scrapli/decorators.py", line 224, in decorate
+    return _multiprocessing_timeout(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/scrapli/decorators.py", line 115, in _multiprocessing_timeout
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/concurrent/futures/_base.py", line 449, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/concurrent/futures/_base.py", line 401, in __get_result
+    raise self._exception
+  File "/usr/lib/python3.12/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/scrapli/channel/sync_channel.py", line 294, in channel_authenticate_ssh
+    buf = self.read()
+          ^^^^^^^^^^^
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/scrapli/channel/sync_channel.py", line 71, in read
+    buf = self.transport.read()
+          ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/scrapli/decorators.py", line 224, in decorate
+    return _multiprocessing_timeout(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/scrapli/decorators.py", line 115, in _multiprocessing_timeout
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/concurrent/futures/_base.py", line 449, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/concurrent/futures/_base.py", line 401, in __get_result
+    raise self._exception
+  File "/usr/lib/python3.12/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/scrapli/transport/plugins/system/transport.py", line 186, in read
+    raise ScrapliConnectionError(msg) from exc
+scrapli.exceptions.ScrapliConnectionError: encountered EOF reading from transport; typically means the device closed the connection
+
+2024-08-31 14:20:50,771 - nornir.core.task -    ERROR -      start() - Host 'vIOS4': task 'config_basic_aaa' failed with traceback:
+Traceback (most recent call last):
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/imran/Documents/Automation/Nornir/Runbooks/Cisco_Lab2/2_Scrapli_Config_AAA_ParserView_username_Lab2.py", line 22, in config_basic_aaa
+    task.run (task=send_configs, configs=aaa_configs)
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: send_configs (failed)
+
+
+2024-08-31 14:20:50,772 - nornir.core.task -    ERROR -      start() - Host 'vIOS4': task 'config_aaa_parser_users' failed with traceback:
+Traceback (most recent call last):
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/imran/Documents/Automation/Nornir/Runbooks/Cisco_Lab2/2_Scrapli_Config_AAA_ParserView_username_Lab2.py", line 48, in config_aaa_parser_users
+    task.run (task=config_basic_aaa)
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: config_basic_aaa (failed)
+
+
+2024-08-31 14:48:59,756 -  nornir.core -     INFO -        run() - Running task 'config_aaa_parser_users' with args {} on 4 hosts
+2024-08-31 14:49:00,059 - nornir.core.task -    ERROR -      start() - Host 'vIOS2': task 'send_configs' failed with traceback:
+Traceback (most recent call last):
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/nornir_scrapli/tasks/core/send_configs.py", line 59, in send_configs
+    scrapli_conn = task.host.get_connection("scrapli", task.nornir.config)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/nornir/core/inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/nornir/core/inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/nornir_scrapli/connection.py", line 106, in open
+    connection.open()
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/scrapli/driver/base/sync_driver.py", line 106, in open
+    self.channel.channel_authenticate_ssh(
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/scrapli/decorators.py", line 224, in decorate
+    return _multiprocessing_timeout(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/scrapli/decorators.py", line 115, in _multiprocessing_timeout
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/concurrent/futures/_base.py", line 449, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/concurrent/futures/_base.py", line 401, in __get_result
+    raise self._exception
+  File "/usr/lib/python3.12/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/scrapli/channel/sync_channel.py", line 297, in channel_authenticate_ssh
+    self._ssh_message_handler(output=authenticate_buf)
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/scrapli/channel/base_channel.py", line 481, in _ssh_message_handler
+    raise ScrapliAuthenticationFailed(msg)
+scrapli.exceptions.ScrapliAuthenticationFailed: Host key verification failed
+
+2024-08-31 14:49:00,059 - nornir.core.task -    ERROR -      start() - Host 'vIOS1': task 'send_configs' failed with traceback:
+Traceback (most recent call last):
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/nornir_scrapli/tasks/core/send_configs.py", line 59, in send_configs
+    scrapli_conn = task.host.get_connection("scrapli", task.nornir.config)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/nornir/core/inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/nornir/core/inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/nornir_scrapli/connection.py", line 106, in open
+    connection.open()
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/scrapli/driver/base/sync_driver.py", line 106, in open
+    self.channel.channel_authenticate_ssh(
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/scrapli/decorators.py", line 224, in decorate
+    return _multiprocessing_timeout(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/scrapli/decorators.py", line 115, in _multiprocessing_timeout
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/concurrent/futures/_base.py", line 449, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/concurrent/futures/_base.py", line 401, in __get_result
+    raise self._exception
+  File "/usr/lib/python3.12/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/scrapli/channel/sync_channel.py", line 297, in channel_authenticate_ssh
+    self._ssh_message_handler(output=authenticate_buf)
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/scrapli/channel/base_channel.py", line 481, in _ssh_message_handler
+    raise ScrapliAuthenticationFailed(msg)
+scrapli.exceptions.ScrapliAuthenticationFailed: Host key verification failed
+
+2024-08-31 14:49:00,060 - nornir.core.task -    ERROR -      start() - Host 'vIOS2': task 'config_basic_aaa' failed with traceback:
+Traceback (most recent call last):
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/imran/Documents/Automation/Nornir/Runbooks/Cisco_Lab2/2_Scrapli_Config_AAA_ParserView_username_Lab2.py", line 22, in config_basic_aaa
+    task.run (task=send_configs, configs=aaa_configs)
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: send_configs (failed)
+
+
+2024-08-31 14:49:00,061 - nornir.core.task -    ERROR -      start() - Host 'vIOS1': task 'config_basic_aaa' failed with traceback:
+Traceback (most recent call last):
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/imran/Documents/Automation/Nornir/Runbooks/Cisco_Lab2/2_Scrapli_Config_AAA_ParserView_username_Lab2.py", line 22, in config_basic_aaa
+    task.run (task=send_configs, configs=aaa_configs)
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: send_configs (failed)
+
+
+2024-08-31 14:49:00,061 - nornir.core.task -    ERROR -      start() - Host 'vIOS2': task 'config_aaa_parser_users' failed with traceback:
+Traceback (most recent call last):
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/imran/Documents/Automation/Nornir/Runbooks/Cisco_Lab2/2_Scrapli_Config_AAA_ParserView_username_Lab2.py", line 48, in config_aaa_parser_users
+    task.run (task=config_basic_aaa)
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: config_basic_aaa (failed)
+
+
+2024-08-31 14:49:00,062 - nornir.core.task -    ERROR -      start() - Host 'vIOS1': task 'config_aaa_parser_users' failed with traceback:
+Traceback (most recent call last):
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/imran/Documents/Automation/Nornir/Runbooks/Cisco_Lab2/2_Scrapli_Config_AAA_ParserView_username_Lab2.py", line 48, in config_aaa_parser_users
+    task.run (task=config_basic_aaa)
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: config_basic_aaa (failed)
+
+
+2024-08-31 14:49:00,075 - nornir.core.task -    ERROR -      start() - Host 'vIOS3': task 'send_configs' failed with traceback:
+Traceback (most recent call last):
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/nornir_scrapli/tasks/core/send_configs.py", line 59, in send_configs
+    scrapli_conn = task.host.get_connection("scrapli", task.nornir.config)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/nornir/core/inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/nornir/core/inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/nornir_scrapli/connection.py", line 106, in open
+    connection.open()
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/scrapli/driver/base/sync_driver.py", line 106, in open
+    self.channel.channel_authenticate_ssh(
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/scrapli/decorators.py", line 224, in decorate
+    return _multiprocessing_timeout(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/scrapli/decorators.py", line 115, in _multiprocessing_timeout
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/concurrent/futures/_base.py", line 449, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/concurrent/futures/_base.py", line 401, in __get_result
+    raise self._exception
+  File "/usr/lib/python3.12/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/scrapli/channel/sync_channel.py", line 297, in channel_authenticate_ssh
+    self._ssh_message_handler(output=authenticate_buf)
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/scrapli/channel/base_channel.py", line 481, in _ssh_message_handler
+    raise ScrapliAuthenticationFailed(msg)
+scrapli.exceptions.ScrapliAuthenticationFailed: Host key verification failed
+
+2024-08-31 14:49:00,075 - nornir.core.task -    ERROR -      start() - Host 'vIOS3': task 'config_basic_aaa' failed with traceback:
+Traceback (most recent call last):
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/imran/Documents/Automation/Nornir/Runbooks/Cisco_Lab2/2_Scrapli_Config_AAA_ParserView_username_Lab2.py", line 22, in config_basic_aaa
+    task.run (task=send_configs, configs=aaa_configs)
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: send_configs (failed)
+
+
+2024-08-31 14:49:00,075 - nornir.core.task -    ERROR -      start() - Host 'vIOS3': task 'config_aaa_parser_users' failed with traceback:
+Traceback (most recent call last):
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/imran/Documents/Automation/Nornir/Runbooks/Cisco_Lab2/2_Scrapli_Config_AAA_ParserView_username_Lab2.py", line 48, in config_aaa_parser_users
+    task.run (task=config_basic_aaa)
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: config_basic_aaa (failed)
+
+
+2024-08-31 14:54:27,990 -  nornir.core -     INFO -        run() - Running task 'config_aaa_parser_users' with args {} on 4 hosts
+2024-08-31 15:14:08,511 -  nornir.core -     INFO -        run() - Running task 'push_cmds' with args {} on 4 hosts
+2024-08-31 15:17:06,349 -  nornir.core -     INFO -        run() - Running task 'push_cmds' with args {} on 4 hosts
+2024-08-31 15:17:25,817 -  nornir.core -     INFO -        run() - Running task 'push_cmds' with args {} on 4 hosts
+2024-08-31 15:17:26,409 - nornir.core.task -    ERROR -      start() - Host 'vIOS2': task 'push_cmds' failed with traceback:
+Traceback (most recent call last):
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/imran/Documents/Automation/Nornir/Runbooks/Cisco_Lab2/3_Scrapli_Role_Base_Automation_Access_Lab3.py", line 29, in push_cmds
+    task.run (task=send_commands, commands=cmds_list)
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: send_commands (failed)
+
+
+2024-08-31 15:17:26,411 - nornir.core.task -    ERROR -      start() - Host 'vIOS4': task 'push_cmds' failed with traceback:
+Traceback (most recent call last):
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/imran/Documents/Automation/Nornir/Runbooks/Cisco_Lab2/3_Scrapli_Role_Base_Automation_Access_Lab3.py", line 29, in push_cmds
+    task.run (task=send_commands, commands=cmds_list)
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: send_commands (failed)
+
+
+2024-08-31 15:17:26,419 - nornir.core.task -    ERROR -      start() - Host 'vIOS3': task 'push_cmds' failed with traceback:
+Traceback (most recent call last):
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/imran/Documents/Automation/Nornir/Runbooks/Cisco_Lab2/3_Scrapli_Role_Base_Automation_Access_Lab3.py", line 29, in push_cmds
+    task.run (task=send_commands, commands=cmds_list)
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: send_commands (failed)
+
+
+2024-08-31 15:17:26,602 - nornir.core.task -    ERROR -      start() - Host 'vIOS1': task 'push_cmds' failed with traceback:
+Traceback (most recent call last):
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/imran/Documents/Automation/Nornir/Runbooks/Cisco_Lab2/3_Scrapli_Role_Base_Automation_Access_Lab3.py", line 29, in push_cmds
+    task.run (task=send_commands, commands=cmds_list)
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: send_commands (failed)
+
+
+2024-08-31 15:27:28,123 -  nornir.core -     INFO -        run() - Running task 'push_random_config' with args {} on 4 hosts
+2024-08-31 15:27:29,660 - nornir.core.task -    ERROR -      start() - Host 'vIOS2': task 'send_configs_from_file' failed with traceback:
+Traceback (most recent call last):
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/nornir_scrapli/tasks/core/send_configs_from_file.py", line 69, in send_configs_from_file
+    scrapli_response = scrapli_conn.send_configs_from_file(
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/scrapli/driver/network/sync_driver.py", line 662, in send_configs_from_file
+    return self.send_configs(
+           ^^^^^^^^^^^^^^^^^^
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/scrapli/driver/network/sync_driver.py", line 538, in send_configs
+    self.acquire_priv(desired_priv=resolved_privilege_level)
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/scrapli/driver/network/sync_driver.py", line 182, in acquire_priv
+    raise ScrapliPrivilegeError(msg)
+scrapli.exceptions.ScrapliPrivilegeError: Failed to acquire requested privilege level configuration
+
+2024-08-31 15:27:29,663 - nornir.core.task -    ERROR -      start() - Host 'vIOS2': task 'push_random_config' failed with traceback:
+Traceback (most recent call last):
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/imran/Documents/Automation/Nornir/Runbooks/Cisco_Lab2/3_Scrapli_Role_Base_Automation_Access_Lab3.py", line 39, in push_random_config
+    task.run (task=send_configs_from_file, file="random_configuration.txt")
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: send_configs_from_file (failed)
+
+
+2024-08-31 15:27:29,684 - nornir.core.task -    ERROR -      start() - Host 'vIOS3': task 'send_configs_from_file' failed with traceback:
+Traceback (most recent call last):
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/nornir_scrapli/tasks/core/send_configs_from_file.py", line 69, in send_configs_from_file
+    scrapli_response = scrapli_conn.send_configs_from_file(
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/scrapli/driver/network/sync_driver.py", line 662, in send_configs_from_file
+    return self.send_configs(
+           ^^^^^^^^^^^^^^^^^^
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/scrapli/driver/network/sync_driver.py", line 538, in send_configs
+    self.acquire_priv(desired_priv=resolved_privilege_level)
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/scrapli/driver/network/sync_driver.py", line 182, in acquire_priv
+    raise ScrapliPrivilegeError(msg)
+scrapli.exceptions.ScrapliPrivilegeError: Failed to acquire requested privilege level configuration
+
+2024-08-31 15:27:29,685 - nornir.core.task -    ERROR -      start() - Host 'vIOS3': task 'push_random_config' failed with traceback:
+Traceback (most recent call last):
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/imran/Documents/Automation/Nornir/Runbooks/Cisco_Lab2/3_Scrapli_Role_Base_Automation_Access_Lab3.py", line 39, in push_random_config
+    task.run (task=send_configs_from_file, file="random_configuration.txt")
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: send_configs_from_file (failed)
+
+
+2024-08-31 15:27:29,786 - nornir.core.task -    ERROR -      start() - Host 'vIOS1': task 'send_configs_from_file' failed with traceback:
+Traceback (most recent call last):
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/nornir_scrapli/tasks/core/send_configs_from_file.py", line 69, in send_configs_from_file
+    scrapli_response = scrapli_conn.send_configs_from_file(
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/scrapli/driver/network/sync_driver.py", line 662, in send_configs_from_file
+    return self.send_configs(
+           ^^^^^^^^^^^^^^^^^^
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/scrapli/driver/network/sync_driver.py", line 538, in send_configs
+    self.acquire_priv(desired_priv=resolved_privilege_level)
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/scrapli/driver/network/sync_driver.py", line 182, in acquire_priv
+    raise ScrapliPrivilegeError(msg)
+scrapli.exceptions.ScrapliPrivilegeError: Failed to acquire requested privilege level configuration
+
+2024-08-31 15:27:29,787 - nornir.core.task -    ERROR -      start() - Host 'vIOS1': task 'push_random_config' failed with traceback:
+Traceback (most recent call last):
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/imran/Documents/Automation/Nornir/Runbooks/Cisco_Lab2/3_Scrapli_Role_Base_Automation_Access_Lab3.py", line 39, in push_random_config
+    task.run (task=send_configs_from_file, file="random_configuration.txt")
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: send_configs_from_file (failed)
+
+
+2024-08-31 15:27:29,844 - nornir.core.task -    ERROR -      start() - Host 'vIOS4': task 'send_configs_from_file' failed with traceback:
+Traceback (most recent call last):
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/nornir_scrapli/tasks/core/send_configs_from_file.py", line 69, in send_configs_from_file
+    scrapli_response = scrapli_conn.send_configs_from_file(
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/scrapli/driver/network/sync_driver.py", line 662, in send_configs_from_file
+    return self.send_configs(
+           ^^^^^^^^^^^^^^^^^^
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/scrapli/driver/network/sync_driver.py", line 538, in send_configs
+    self.acquire_priv(desired_priv=resolved_privilege_level)
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/scrapli/driver/network/sync_driver.py", line 182, in acquire_priv
+    raise ScrapliPrivilegeError(msg)
+scrapli.exceptions.ScrapliPrivilegeError: Failed to acquire requested privilege level configuration
+
+2024-08-31 15:27:29,844 - nornir.core.task -    ERROR -      start() - Host 'vIOS4': task 'push_random_config' failed with traceback:
+Traceback (most recent call last):
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/imran/Documents/Automation/Nornir/Runbooks/Cisco_Lab2/3_Scrapli_Role_Base_Automation_Access_Lab3.py", line 39, in push_random_config
+    task.run (task=send_configs_from_file, file="random_configuration.txt")
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: send_configs_from_file (failed)
+
+
+2024-08-31 15:28:12,497 -  nornir.core -     INFO -        run() - Running task 'push_random_config' with args {} on 4 hosts
+2024-08-31 16:10:59,204 -  nornir.core -     INFO -        run() - Running task 'push_random_config' with args {} on 4 hosts
+2024-08-31 16:19:38,848 -  nornir.core -     INFO -        run() - Running task 'configure_basic_ip_addresses' with args {} on 4 hosts
+2024-08-31 16:45:38,716 -  nornir.core -     INFO -        run() - Running task 'Backup_Golden_Config' with args {} on 4 hosts
+2024-08-31 16:46:09,408 - nornir.core.task -    ERROR -      start() - Host 'vIOS3': task 'send_interactive' failed with traceback:
+Traceback (most recent call last):
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/nornir_scrapli/tasks/core/send_interactive.py", line 81, in send_interactive
+    scrapli_response = scrapli_conn.send_interactive(
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/scrapli/driver/network/sync_driver.py", line 461, in send_interactive
+    response: Response = super().send_interactive(
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/scrapli/decorators.py", line 307, in decorate
+    result = wrapped_func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/scrapli/driver/generic/sync_driver.py", line 480, in send_interactive
+    raw_response, processed_response = self.channel.send_inputs_interact(
+                                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/scrapli/decorators.py", line 224, in decorate
+    return _multiprocessing_timeout(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/scrapli/decorators.py", line 110, in _multiprocessing_timeout
+    return _handle_timeout(
+           ^^^^^^^^^^^^^^^^
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/scrapli/decorators.py", line 142, in _handle_timeout
+    raise ScrapliTimeout(message)
+scrapli.exceptions.ScrapliTimeout: timed out sending interactive input to device
+
+2024-08-31 16:46:09,410 - nornir.core.task -    ERROR -      start() - Host 'vIOS3': task 'Backup_Golden_Config' failed with traceback:
+Traceback (most recent call last):
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/imran/Documents/Automation/Nornir/Runbooks/Cisco_Lab2/4_Scrapli_Backup_Golden_Config_Lab4.py", line 30, in Backup_Golden_Config
+    task.run (task=send_interactive, interact_events=cmds)
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: send_interactive (failed)
+
+
+2024-08-31 16:46:09,409 - nornir.core.task -    ERROR -      start() - Host 'vIOS4': task 'send_interactive' failed with traceback:
+Traceback (most recent call last):
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/nornir_scrapli/tasks/core/send_interactive.py", line 81, in send_interactive
+    scrapli_response = scrapli_conn.send_interactive(
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/scrapli/driver/network/sync_driver.py", line 461, in send_interactive
+    response: Response = super().send_interactive(
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/scrapli/decorators.py", line 307, in decorate
+    result = wrapped_func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/scrapli/driver/generic/sync_driver.py", line 480, in send_interactive
+    raw_response, processed_response = self.channel.send_inputs_interact(
+                                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/scrapli/decorators.py", line 224, in decorate
+    return _multiprocessing_timeout(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/scrapli/decorators.py", line 110, in _multiprocessing_timeout
+    return _handle_timeout(
+           ^^^^^^^^^^^^^^^^
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/scrapli/decorators.py", line 142, in _handle_timeout
+    raise ScrapliTimeout(message)
+scrapli.exceptions.ScrapliTimeout: timed out sending interactive input to device
+
+2024-08-31 16:46:09,411 - nornir.core.task -    ERROR -      start() - Host 'vIOS4': task 'Backup_Golden_Config' failed with traceback:
+Traceback (most recent call last):
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/imran/Documents/Automation/Nornir/Runbooks/Cisco_Lab2/4_Scrapli_Backup_Golden_Config_Lab4.py", line 30, in Backup_Golden_Config
+    task.run (task=send_interactive, interact_events=cmds)
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: send_interactive (failed)
+
+
+2024-08-31 16:46:09,422 - nornir.core.task -    ERROR -      start() - Host 'vIOS2': task 'send_interactive' failed with traceback:
+Traceback (most recent call last):
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/nornir_scrapli/tasks/core/send_interactive.py", line 81, in send_interactive
+    scrapli_response = scrapli_conn.send_interactive(
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/scrapli/driver/network/sync_driver.py", line 461, in send_interactive
+    response: Response = super().send_interactive(
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/scrapli/decorators.py", line 307, in decorate
+    result = wrapped_func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/scrapli/driver/generic/sync_driver.py", line 480, in send_interactive
+    raw_response, processed_response = self.channel.send_inputs_interact(
+                                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/scrapli/decorators.py", line 224, in decorate
+    return _multiprocessing_timeout(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/scrapli/decorators.py", line 110, in _multiprocessing_timeout
+    return _handle_timeout(
+           ^^^^^^^^^^^^^^^^
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/scrapli/decorators.py", line 142, in _handle_timeout
+    raise ScrapliTimeout(message)
+scrapli.exceptions.ScrapliTimeout: timed out sending interactive input to device
+
+2024-08-31 16:46:09,423 - nornir.core.task -    ERROR -      start() - Host 'vIOS2': task 'Backup_Golden_Config' failed with traceback:
+Traceback (most recent call last):
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/imran/Documents/Automation/Nornir/Runbooks/Cisco_Lab2/4_Scrapli_Backup_Golden_Config_Lab4.py", line 30, in Backup_Golden_Config
+    task.run (task=send_interactive, interact_events=cmds)
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: send_interactive (failed)
+
+
+2024-08-31 16:46:09,731 - nornir.core.task -    ERROR -      start() - Host 'vIOS1': task 'send_interactive' failed with traceback:
+Traceback (most recent call last):
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/nornir_scrapli/tasks/core/send_interactive.py", line 81, in send_interactive
+    scrapli_response = scrapli_conn.send_interactive(
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/scrapli/driver/network/sync_driver.py", line 461, in send_interactive
+    response: Response = super().send_interactive(
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/scrapli/decorators.py", line 307, in decorate
+    result = wrapped_func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/scrapli/driver/generic/sync_driver.py", line 480, in send_interactive
+    raw_response, processed_response = self.channel.send_inputs_interact(
+                                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/scrapli/decorators.py", line 224, in decorate
+    return _multiprocessing_timeout(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/scrapli/decorators.py", line 110, in _multiprocessing_timeout
+    return _handle_timeout(
+           ^^^^^^^^^^^^^^^^
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/scrapli/decorators.py", line 142, in _handle_timeout
+    raise ScrapliTimeout(message)
+scrapli.exceptions.ScrapliTimeout: timed out sending interactive input to device
+
+2024-08-31 16:46:09,732 - nornir.core.task -    ERROR -      start() - Host 'vIOS1': task 'Backup_Golden_Config' failed with traceback:
+Traceback (most recent call last):
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/imran/Documents/Automation/Nornir/Runbooks/Cisco_Lab2/4_Scrapli_Backup_Golden_Config_Lab4.py", line 30, in Backup_Golden_Config
+    task.run (task=send_interactive, interact_events=cmds)
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: send_interactive (failed)
+
+
+2024-08-31 16:50:49,554 -  nornir.core -     INFO -        run() - Running task 'Backup_Golden_Config' with args {} on 4 hosts
+2024-08-31 16:54:14,307 -  nornir.core -     INFO -        run() - Running task 'Backup_Golden_Config' with args {} on 4 hosts
+2024-08-31 16:58:57,045 -  nornir.core -     INFO -        run() - Running task 'Backup_Golden_Config' with args {} on 4 hosts
+2024-08-31 17:00:26,826 -  nornir.core -     INFO -        run() - Running task 'Backup_Golden_Config' with args {} on 4 hosts
+2024-08-31 17:17:14,790 -  nornir.core -     INFO -        run() - Running task 'Roll_Back_Golden_Config' with args {} on 4 hosts

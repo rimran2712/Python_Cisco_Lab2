@@ -1,0 +1,13 @@
+---
+
+inventory:
+    plugin: SimpleInventory
+    options:
+        host_file: "/home/imran/Documents/Automation/Nornir/Runbooks/Cisco_Lab2/Inventory/hosts.yaml"
+        group_file: "/home/imran/Documents/Automation/Nornir/Runbooks/Cisco_Lab2/Inventory/groups.yaml"
+        defaults_file: "/home/imran/Documents/Automation/Nornir/Runbooks/Cisco_Lab2/Inventory/defaults.yaml"
+
+runner:
+    plugin: threaded
+    options:
+        num_workers: 10
