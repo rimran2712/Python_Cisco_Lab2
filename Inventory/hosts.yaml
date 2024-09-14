@@ -18,25 +18,44 @@ vIOS-R1:
                 name: Gi0/2
                 ip: 10.1.4.1
                 mask: 255.255.255.0
-
+        bgp:
+            localAsn: 65001
+            routerId: 1.1.1.1
+            neighbors:
+                - address: 3.3.3.3
+                  type: "eBGP"
+                  remoteAsn: 65003 
+                - address: 4.4.4.4
+                  type: "eBGP"
+                  remoteAsn: 65004
 vIOS-R2:
-   hostname: 172.16.100.6
-   groups:
+    hostname: 172.16.100.6
+    groups:
         - cisco_group
-   data:
-       interfaces:
-           lo0:
-               name: lo0
-               ip: 2.2.2.2
-               mask: 255.255.255.255
-           Gi0/1:
-               name: Gi0/1
-               ip: 10.2.4.2
-               mask: 255.255.255.0
-           Gi0/2:
-               name: Gi0/2
-               ip: 10.2.3.2
-               mask: 255.255.255.0
+    data:
+        interfaces:
+            lo0:
+                name: lo0
+                ip: 2.2.2.2
+                mask: 255.255.255.255
+            Gi0/1:
+                name: Gi0/1
+                ip: 10.2.4.2
+                mask: 255.255.255.0
+            Gi0/2:
+                name: Gi0/2
+                ip: 10.2.3.2
+                mask: 255.255.255.0
+        bgp:
+            localAsn: 65001
+            routerId: 2.2.2.2
+            neighbors:
+                - address: 3.3.3.3
+                  type: "eBGP"
+                  remoteAsn: 65003 
+                - address: 4.4.4.4
+                  type: "eBGP"
+                  remoteAsn: 65004
 vIOS-R3:
     hostname: 172.16.100.10
     groups:
@@ -55,6 +74,16 @@ vIOS-R3:
                 name: "Gi0/2"
                 ip: 10.2.3.3
                 mask: 255.255.255.0
+        bgp:
+            localAsn: 65001
+            routerId: 3.3.3.3
+            neighbors:
+                - address: 1.1.1.1
+                  type: "eBGP"
+                  remoteAsn: 65001 
+                - address: 2.2.2.2
+                  type: "eBGP"
+                  remoteAsn: 65002                
 vIOS-R4:
     hostname: 172.16.100.14
     groups:
@@ -73,3 +102,13 @@ vIOS-R4:
                 name: "Gi0/2"
                 ip: 10.1.4.4
                 mask: 255.255.255.0
+        bgp:
+            localAsn: 65001
+            routerId: 4.4.4.4
+            neighbors:
+                - address: 1.1.1.1
+                  type: "eBGP"
+                  remoteAsn: 65001 
+                - address: 2.2.2.2
+                  type: "eBGP"
+                  remoteAsn: 65002        

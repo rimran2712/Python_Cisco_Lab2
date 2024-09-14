@@ -5024,3 +5024,447 @@ AttributeError: 'dict' object has no attribute 'key'. Did you mean: 'keys'?
 2024-09-12 23:57:43,031 -  nornir.core -     INFO -        run() - Running task 'configure_basic_ip_addresses' with args {} on 4 hosts
 2024-09-12 23:58:30,220 -  nornir.core -     INFO -        run() - Running task 'configure_basic_ip_addresses' with args {} on 4 hosts
 2024-09-13 00:01:02,537 -  nornir.core -     INFO -        run() - Running task 'configure_basic_ip_addresses' with args {} on 4 hosts
+2024-09-14 01:20:38,031 -  nornir.core -     INFO -        run() - Running task 'configure_basic_ip_addresses' with args {} on 4 hosts
+2024-09-14 01:32:51,056 -  nornir.core -     INFO -        run() - Running task 'config_basic_ospf' with args {} on 4 hosts
+2024-09-14 01:32:55,422 - nornir.core.task -    ERROR -      start() - Host 'vIOS-R1': task 'send_configs' failed with traceback:
+Traceback (most recent call last):
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/nornir_scrapli/tasks/core/send_configs.py", line 59, in send_configs
+    scrapli_conn = task.host.get_connection("scrapli", task.nornir.config)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/nornir/core/inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/nornir/core/inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/nornir_scrapli/connection.py", line 106, in open
+    connection.open()
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/scrapli/driver/base/sync_driver.py", line 106, in open
+    self.channel.channel_authenticate_ssh(
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/scrapli/decorators.py", line 224, in decorate
+    return _multiprocessing_timeout(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/scrapli/decorators.py", line 115, in _multiprocessing_timeout
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/concurrent/futures/_base.py", line 449, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/concurrent/futures/_base.py", line 401, in __get_result
+    raise self._exception
+  File "/usr/lib/python3.12/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/scrapli/channel/sync_channel.py", line 309, in channel_authenticate_ssh
+    raise ScrapliAuthenticationFailed(msg)
+scrapli.exceptions.ScrapliAuthenticationFailed: password prompt seen more than once, assuming auth failed
+
+2024-09-14 01:32:55,423 - nornir.core.task -    ERROR -      start() - Host 'vIOS-R1': task 'config_basic_ospf' failed with traceback:
+Traceback (most recent call last):
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/imran/Documents/Automation/Nornir/Runbooks_Repositories/Python_Cisco_Lab2/8_Scrapli_Basic_OSPF_Single_Area0_Lab8.py", line 14, in config_basic_ospf
+    task.run (task=send_configs, configs=ospf_configs)
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: send_configs (failed)
+
+
+2024-09-14 01:32:55,612 - nornir.core.task -    ERROR -      start() - Host 'vIOS-R3': task 'send_configs' failed with traceback:
+Traceback (most recent call last):
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/nornir_scrapli/tasks/core/send_configs.py", line 59, in send_configs
+    scrapli_conn = task.host.get_connection("scrapli", task.nornir.config)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/nornir/core/inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/nornir/core/inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/nornir_scrapli/connection.py", line 106, in open
+    connection.open()
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/scrapli/driver/base/sync_driver.py", line 106, in open
+    self.channel.channel_authenticate_ssh(
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/scrapli/decorators.py", line 224, in decorate
+    return _multiprocessing_timeout(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/scrapli/decorators.py", line 115, in _multiprocessing_timeout
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/concurrent/futures/_base.py", line 449, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/concurrent/futures/_base.py", line 401, in __get_result
+    raise self._exception
+  File "/usr/lib/python3.12/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/scrapli/channel/sync_channel.py", line 309, in channel_authenticate_ssh
+    raise ScrapliAuthenticationFailed(msg)
+scrapli.exceptions.ScrapliAuthenticationFailed: password prompt seen more than once, assuming auth failed
+
+2024-09-14 01:32:55,612 - nornir.core.task -    ERROR -      start() - Host 'vIOS-R3': task 'config_basic_ospf' failed with traceback:
+Traceback (most recent call last):
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/imran/Documents/Automation/Nornir/Runbooks_Repositories/Python_Cisco_Lab2/8_Scrapli_Basic_OSPF_Single_Area0_Lab8.py", line 14, in config_basic_ospf
+    task.run (task=send_configs, configs=ospf_configs)
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: send_configs (failed)
+
+
+2024-09-14 01:32:55,630 - nornir.core.task -    ERROR -      start() - Host 'vIOS-R4': task 'send_configs' failed with traceback:
+Traceback (most recent call last):
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/nornir_scrapli/tasks/core/send_configs.py", line 59, in send_configs
+    scrapli_conn = task.host.get_connection("scrapli", task.nornir.config)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/nornir/core/inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/nornir/core/inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/nornir_scrapli/connection.py", line 106, in open
+    connection.open()
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/scrapli/driver/base/sync_driver.py", line 106, in open
+    self.channel.channel_authenticate_ssh(
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/scrapli/decorators.py", line 224, in decorate
+    return _multiprocessing_timeout(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/scrapli/decorators.py", line 115, in _multiprocessing_timeout
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/concurrent/futures/_base.py", line 449, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/concurrent/futures/_base.py", line 401, in __get_result
+    raise self._exception
+  File "/usr/lib/python3.12/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/scrapli/channel/sync_channel.py", line 309, in channel_authenticate_ssh
+    raise ScrapliAuthenticationFailed(msg)
+scrapli.exceptions.ScrapliAuthenticationFailed: password prompt seen more than once, assuming auth failed
+
+2024-09-14 01:32:55,630 - nornir.core.task -    ERROR -      start() - Host 'vIOS-R4': task 'config_basic_ospf' failed with traceback:
+Traceback (most recent call last):
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/imran/Documents/Automation/Nornir/Runbooks_Repositories/Python_Cisco_Lab2/8_Scrapli_Basic_OSPF_Single_Area0_Lab8.py", line 14, in config_basic_ospf
+    task.run (task=send_configs, configs=ospf_configs)
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: send_configs (failed)
+
+
+2024-09-14 01:32:55,633 - nornir.core.task -    ERROR -      start() - Host 'vIOS-R2': task 'send_configs' failed with traceback:
+Traceback (most recent call last):
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/nornir_scrapli/tasks/core/send_configs.py", line 59, in send_configs
+    scrapli_conn = task.host.get_connection("scrapli", task.nornir.config)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/nornir/core/inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/nornir/core/inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/nornir_scrapli/connection.py", line 106, in open
+    connection.open()
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/scrapli/driver/base/sync_driver.py", line 106, in open
+    self.channel.channel_authenticate_ssh(
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/scrapli/decorators.py", line 224, in decorate
+    return _multiprocessing_timeout(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/scrapli/decorators.py", line 115, in _multiprocessing_timeout
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/concurrent/futures/_base.py", line 449, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/concurrent/futures/_base.py", line 401, in __get_result
+    raise self._exception
+  File "/usr/lib/python3.12/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/scrapli/channel/sync_channel.py", line 309, in channel_authenticate_ssh
+    raise ScrapliAuthenticationFailed(msg)
+scrapli.exceptions.ScrapliAuthenticationFailed: password prompt seen more than once, assuming auth failed
+
+2024-09-14 01:32:55,634 - nornir.core.task -    ERROR -      start() - Host 'vIOS-R2': task 'config_basic_ospf' failed with traceback:
+Traceback (most recent call last):
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/imran/Documents/Automation/Nornir/Runbooks_Repositories/Python_Cisco_Lab2/8_Scrapli_Basic_OSPF_Single_Area0_Lab8.py", line 14, in config_basic_ospf
+    task.run (task=send_configs, configs=ospf_configs)
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: send_configs (failed)
+
+
+2024-09-14 01:35:56,553 -  nornir.core -     INFO -        run() - Running task 'config_basic_ospf' with args {} on 4 hosts
+2024-09-14 01:36:00,927 - nornir.core.task -    ERROR -      start() - Host 'vIOS-R3': task 'send_configs' failed with traceback:
+Traceback (most recent call last):
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/nornir_scrapli/tasks/core/send_configs.py", line 59, in send_configs
+    scrapli_conn = task.host.get_connection("scrapli", task.nornir.config)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/nornir/core/inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/nornir/core/inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/nornir_scrapli/connection.py", line 106, in open
+    connection.open()
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/scrapli/driver/base/sync_driver.py", line 106, in open
+    self.channel.channel_authenticate_ssh(
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/scrapli/decorators.py", line 224, in decorate
+    return _multiprocessing_timeout(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/scrapli/decorators.py", line 115, in _multiprocessing_timeout
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/concurrent/futures/_base.py", line 449, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/concurrent/futures/_base.py", line 401, in __get_result
+    raise self._exception
+  File "/usr/lib/python3.12/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/scrapli/channel/sync_channel.py", line 309, in channel_authenticate_ssh
+    raise ScrapliAuthenticationFailed(msg)
+scrapli.exceptions.ScrapliAuthenticationFailed: password prompt seen more than once, assuming auth failed
+
+2024-09-14 01:36:00,929 - nornir.core.task -    ERROR -      start() - Host 'vIOS-R3': task 'config_basic_ospf' failed with traceback:
+Traceback (most recent call last):
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/imran/Documents/Automation/Nornir/Runbooks_Repositories/Python_Cisco_Lab2/8_Scrapli_Basic_OSPF_Single_Area0_Lab8.py", line 14, in config_basic_ospf
+    task.run (task=send_configs, configs=ospf_configs)
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: send_configs (failed)
+
+
+2024-09-14 01:36:01,090 - nornir.core.task -    ERROR -      start() - Host 'vIOS-R2': task 'send_configs' failed with traceback:
+Traceback (most recent call last):
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/nornir_scrapli/tasks/core/send_configs.py", line 59, in send_configs
+    scrapli_conn = task.host.get_connection("scrapli", task.nornir.config)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/nornir/core/inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/nornir/core/inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/nornir_scrapli/connection.py", line 106, in open
+    connection.open()
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/scrapli/driver/base/sync_driver.py", line 106, in open
+    self.channel.channel_authenticate_ssh(
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/scrapli/decorators.py", line 224, in decorate
+    return _multiprocessing_timeout(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/scrapli/decorators.py", line 115, in _multiprocessing_timeout
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/concurrent/futures/_base.py", line 449, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/concurrent/futures/_base.py", line 401, in __get_result
+    raise self._exception
+  File "/usr/lib/python3.12/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/scrapli/channel/sync_channel.py", line 309, in channel_authenticate_ssh
+    raise ScrapliAuthenticationFailed(msg)
+scrapli.exceptions.ScrapliAuthenticationFailed: password prompt seen more than once, assuming auth failed
+
+2024-09-14 01:36:01,091 - nornir.core.task -    ERROR -      start() - Host 'vIOS-R2': task 'config_basic_ospf' failed with traceback:
+Traceback (most recent call last):
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/imran/Documents/Automation/Nornir/Runbooks_Repositories/Python_Cisco_Lab2/8_Scrapli_Basic_OSPF_Single_Area0_Lab8.py", line 14, in config_basic_ospf
+    task.run (task=send_configs, configs=ospf_configs)
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: send_configs (failed)
+
+
+2024-09-14 01:36:01,096 - nornir.core.task -    ERROR -      start() - Host 'vIOS-R1': task 'send_configs' failed with traceback:
+Traceback (most recent call last):
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/nornir_scrapli/tasks/core/send_configs.py", line 59, in send_configs
+    scrapli_conn = task.host.get_connection("scrapli", task.nornir.config)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/nornir/core/inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/nornir/core/inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/nornir_scrapli/connection.py", line 106, in open
+    connection.open()
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/scrapli/driver/base/sync_driver.py", line 106, in open
+    self.channel.channel_authenticate_ssh(
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/scrapli/decorators.py", line 224, in decorate
+    return _multiprocessing_timeout(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/scrapli/decorators.py", line 115, in _multiprocessing_timeout
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/concurrent/futures/_base.py", line 449, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/concurrent/futures/_base.py", line 401, in __get_result
+    raise self._exception
+  File "/usr/lib/python3.12/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/scrapli/channel/sync_channel.py", line 309, in channel_authenticate_ssh
+    raise ScrapliAuthenticationFailed(msg)
+scrapli.exceptions.ScrapliAuthenticationFailed: password prompt seen more than once, assuming auth failed
+
+2024-09-14 01:36:01,097 - nornir.core.task -    ERROR -      start() - Host 'vIOS-R1': task 'config_basic_ospf' failed with traceback:
+Traceback (most recent call last):
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/imran/Documents/Automation/Nornir/Runbooks_Repositories/Python_Cisco_Lab2/8_Scrapli_Basic_OSPF_Single_Area0_Lab8.py", line 14, in config_basic_ospf
+    task.run (task=send_configs, configs=ospf_configs)
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: send_configs (failed)
+
+
+2024-09-14 01:36:01,105 - nornir.core.task -    ERROR -      start() - Host 'vIOS-R4': task 'send_configs' failed with traceback:
+Traceback (most recent call last):
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/nornir_scrapli/tasks/core/send_configs.py", line 59, in send_configs
+    scrapli_conn = task.host.get_connection("scrapli", task.nornir.config)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/nornir/core/inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/nornir/core/inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/nornir_scrapli/connection.py", line 106, in open
+    connection.open()
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/scrapli/driver/base/sync_driver.py", line 106, in open
+    self.channel.channel_authenticate_ssh(
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/scrapli/decorators.py", line 224, in decorate
+    return _multiprocessing_timeout(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/scrapli/decorators.py", line 115, in _multiprocessing_timeout
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/concurrent/futures/_base.py", line 449, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/concurrent/futures/_base.py", line 401, in __get_result
+    raise self._exception
+  File "/usr/lib/python3.12/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/scrapli/channel/sync_channel.py", line 309, in channel_authenticate_ssh
+    raise ScrapliAuthenticationFailed(msg)
+scrapli.exceptions.ScrapliAuthenticationFailed: password prompt seen more than once, assuming auth failed
+
+2024-09-14 01:36:01,106 - nornir.core.task -    ERROR -      start() - Host 'vIOS-R4': task 'config_basic_ospf' failed with traceback:
+Traceback (most recent call last):
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/imran/Documents/Automation/Nornir/Runbooks_Repositories/Python_Cisco_Lab2/8_Scrapli_Basic_OSPF_Single_Area0_Lab8.py", line 14, in config_basic_ospf
+    task.run (task=send_configs, configs=ospf_configs)
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: send_configs (failed)
+
+
+2024-09-14 01:36:30,052 -  nornir.core -     INFO -        run() - Running task 'configure_basic_ip_addresses' with args {} on 4 hosts
+2024-09-14 01:37:36,405 -  nornir.core -     INFO -        run() - Running task 'config_basic_ospf' with args {} on 4 hosts
+2024-09-14 11:45:00,368 -  nornir.core -     INFO -        run() - Running task 'configure_basic_ip_addresses' with args {} on 4 hosts
+2024-09-14 11:45:38,188 -  nornir.core -     INFO -        run() - Running task 'config_basic_ospf' with args {} on 4 hosts
+2024-09-14 12:31:41,727 -  nornir.core -     INFO -        run() - Running task 'config_basic_iBGP' with args {} on 4 hosts
+2024-09-14 12:31:41,729 - nornir.core.task -    ERROR -      start() - Host 'vIOS-R1': task 'config_basic_iBGP' failed with traceback:
+Traceback (most recent call last):
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/imran/Documents/Automation/Nornir/Runbooks_Repositories/Python_Cisco_Lab2/9_Scrapli_Basic_iBGP.py", line 18, in config_basic_iBGP
+    while index < neighboursList.len():
+                  ^^^^^^^^^^^^^^^^^^
+AttributeError: 'list' object has no attribute 'len'
+
+2024-09-14 12:31:41,730 - nornir.core.task -    ERROR -      start() - Host 'vIOS-R2': task 'config_basic_iBGP' failed with traceback:
+Traceback (most recent call last):
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/imran/Documents/Automation/Nornir/Runbooks_Repositories/Python_Cisco_Lab2/9_Scrapli_Basic_iBGP.py", line 18, in config_basic_iBGP
+    while index < neighboursList.len():
+                  ^^^^^^^^^^^^^^^^^^
+AttributeError: 'list' object has no attribute 'len'
+
+2024-09-14 12:31:41,731 - nornir.core.task -    ERROR -      start() - Host 'vIOS-R4': task 'config_basic_iBGP' failed with traceback:
+Traceback (most recent call last):
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/imran/Documents/Automation/Nornir/Runbooks_Repositories/Python_Cisco_Lab2/9_Scrapli_Basic_iBGP.py", line 18, in config_basic_iBGP
+    while index < neighboursList.len():
+                  ^^^^^^^^^^^^^^^^^^
+AttributeError: 'list' object has no attribute 'len'
+
+2024-09-14 12:31:41,732 - nornir.core.task -    ERROR -      start() - Host 'vIOS-R3': task 'config_basic_iBGP' failed with traceback:
+Traceback (most recent call last):
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/imran/Documents/Automation/Nornir/Runbooks_Repositories/Python_Cisco_Lab2/9_Scrapli_Basic_iBGP.py", line 18, in config_basic_iBGP
+    while index < neighboursList.len():
+                  ^^^^^^^^^^^^^^^^^^
+AttributeError: 'list' object has no attribute 'len'
+
+2024-09-14 12:33:00,154 -  nornir.core -     INFO -        run() - Running task 'config_basic_iBGP' with args {} on 4 hosts
+2024-09-14 12:44:37,354 -  nornir.core -     INFO -        run() - Running task 'config_basic_iBGP' with args {} on 4 hosts
+2024-09-14 12:45:55,398 -  nornir.core -     INFO -        run() - Running task 'config_basic_iBGP' with args {} on 4 hosts
+2024-09-14 13:39:32,569 -  nornir.core -     INFO -        run() - Running task 'get_bgp_updown_time' with args {} on 4 hosts
+2024-09-14 13:45:38,725 -  nornir.core -     INFO -        run() - Running task 'get_bgp_updown_time' with args {} on 4 hosts
+2024-09-14 13:48:18,393 -  nornir.core -     INFO -        run() - Running task 'get_bgp_updown_time' with args {} on 4 hosts
+2024-09-14 13:55:04,923 -  nornir.core -     INFO -        run() - Running task 'get_bgp_updown_time' with args {} on 4 hosts
+2024-09-14 13:55:07,643 - nornir.core.task -    ERROR -      start() - Host 'vIOS-R3': task 'get_bgp_updown_time' failed with traceback:
+Traceback (most recent call last):
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/imran/Documents/Automation/Nornir/Runbooks_Repositories/Python_Cisco_Lab2/10_Scrapli_BGP_Updown_Genie_Parse.py", line 28, in get_bgp_updown_time
+    updown_time = task.host['bgp_summary']['vrf']['default']['neighbor']['3.3.3.3']['address_family']['']['up_down']
+                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^
+KeyError: '3.3.3.3'
+
+2024-09-14 13:55:07,651 - nornir.core.task -    ERROR -      start() - Host 'vIOS-R4': task 'get_bgp_updown_time' failed with traceback:
+Traceback (most recent call last):
+  File "/home/imran/Documents/Automation/Nornir/.MyNAPALMvenv/lib/python3.12/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/imran/Documents/Automation/Nornir/Runbooks_Repositories/Python_Cisco_Lab2/10_Scrapli_BGP_Updown_Genie_Parse.py", line 28, in get_bgp_updown_time
+    updown_time = task.host['bgp_summary']['vrf']['default']['neighbor']['3.3.3.3']['address_family']['']['up_down']
+                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^
+KeyError: '3.3.3.3'
+
+2024-09-14 13:56:44,304 -  nornir.core -     INFO -        run() - Running task 'get_bgp_updown_time' with args {} on 4 hosts
